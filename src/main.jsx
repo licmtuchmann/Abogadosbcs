@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import MFTBrandGuide from './MFTBrandGuide.jsx';
+import MFTWebsite from './MFTWebsite.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MFTBrandGuide />
+    <MFTWebsite />
   </React.StrictMode>
 );
