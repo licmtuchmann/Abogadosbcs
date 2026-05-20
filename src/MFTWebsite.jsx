@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   MapPin, Phone, MessageCircle, Mail, Globe, Clock,
   Shield, Scale, FileText, Users, Building2, Briefcase,
   Award, BookOpen, UserCheck, Menu, X, ChevronDown, ChevronRight,
-  Languages, ArrowRight, ArrowUpRight, CheckCircle2, Quote
+  Languages, ArrowRight, CheckCircle2
 } from 'lucide-react';
 
 /* =====================================================
@@ -650,19 +650,24 @@ const OutlineLightButton = ({ children, onClick, className = '' }) => (
   </button>
 );
 
-const Logo = ({ inverse = false, compact = false }) => (
-  <div className="flex items-center gap-3 select-none">
-    <div className="w-1 self-stretch" style={{ backgroundColor: C.gold, minHeight: 36 }} />
+const Logo = ({ inverse = false }) => (
+  <div className="flex items-center gap-2.5 md:gap-3 select-none">
+    <img
+      src={inverse ? '/assets/logo-mark-white.png' : '/assets/logo-mark.png'}
+      alt="Meza Figueroa, Tuchmann & Asociados"
+      style={{ height: 44, width: 'auto' }}
+      className="flex-shrink-0"
+    />
     <div>
       <div
         style={{
           fontFamily: FONT_SERIF,
           color: inverse ? C.white : C.navy,
           fontWeight: 700,
-          lineHeight: 1.05,
+          lineHeight: 1.1,
           letterSpacing: '0.02em',
         }}
-        className="text-[15px] md:text-base"
+        className="text-[12px] md:text-[14px]"
       >
         <span>MEZA FIGUEROA, TUCHMANN</span>
         <span style={{ color: C.gold }}> &amp; </span>
@@ -672,12 +677,12 @@ const Logo = ({ inverse = false, compact = false }) => (
         style={{
           fontFamily: FONT_NARROW,
           color: C.gold,
-          letterSpacing: '0.15em',
+          letterSpacing: '0.18em',
           fontWeight: 700,
         }}
-        className="text-[10px] uppercase mt-0.5"
+        className="text-[9px] md:text-[10px] uppercase mt-0.5"
       >
-        Abogados · La Paz, B.C.S.
+        Despacho de Abogados · La Paz, B.C.S.
       </div>
     </div>
   </div>
@@ -1325,15 +1330,20 @@ const FirmPage = ({ t }) => (
           </div>
 
           <div
-            className="rounded-2xl p-8 relative overflow-hidden"
+            className="rounded-2xl p-8 md:p-10 relative overflow-hidden flex flex-col items-center text-center"
             style={{ background: `linear-gradient(135deg, ${C.navy}, ${C.navyDark})`, color: C.white }}
           >
-            <Quote size={40} color={C.gold} className="opacity-70 mb-4" />
-            <p style={{ fontFamily: FONT_SERIF, fontStyle: 'italic', fontWeight: 400, lineHeight: 1.5 }} className="text-xl md:text-2xl mb-6">
+            <img
+              src="/assets/logo-mft-white.png"
+              alt="Meza Figueroa, Tuchmann & Asociados"
+              style={{ height: 170, width: 'auto' }}
+              className="mb-6"
+            />
+            <GoldRule width={36} />
+            <p style={{ fontFamily: FONT_SERIF, fontStyle: 'italic', fontWeight: 400, lineHeight: 1.5 }} className="text-lg md:text-xl mt-5 mb-4">
               "{t.common.tagline}"
             </p>
-            <GoldRule width={36} />
-            <p style={{ fontFamily: FONT_NARROW, color: C.gold, letterSpacing: '0.2em' }} className="mt-4 text-[11px] uppercase font-bold">
+            <p style={{ fontFamily: FONT_NARROW, color: C.gold, letterSpacing: '0.2em' }} className="text-[11px] uppercase font-bold">
               MFT · 2010 — 2025
             </p>
           </div>
