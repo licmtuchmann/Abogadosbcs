@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "last_updated": null,
+    "sources": [
+      {
+        "id": "sjf",
+        "label": "Semanario Judicial de la Federación (SCJN)",
+        "url": "https://sjf2.scjn.gob.mx/"
+      },
+      {
+        "id": "scjn",
+        "label": "SCJN — Sentencias y Precedentes obligatorios",
+        "url": "https://www.scjn.gob.mx/"
+      },
+      {
+        "id": "cidh",
+        "label": "Corte Interamericana de Derechos Humanos",
+        "url": "https://www.corteidh.or.cr/cf/jurisprudencia2/index.cfm?lang=es"
+      }
+    ],
+    "schema_doc": "Cada item debe tener source_url accesible. Sin source_url, el cargador descarta el item (anti-alucinación)."
+  },
+  "items": []
+}
