@@ -98,6 +98,98 @@ async function searchQuery(q) {
   }
 }
 
+// Fetch and parse the public detail page for a tesis by registro number.
+// The SJF detail page is server-rendered HTML; we extract via regex with
+// strict guards — if a field can't be located, it stays empty (never invented).
+async function fetchTesisByRegistro(registro) {
+  const url = `${SJF_BASE}/detalle/tesis/${registro}`;
+  let html = '';
+  try {
+    html = await fetchJSON(url, { headers: { 'Accept': 'text/html' } });
+  } catch (e) {
+    console.warn(`[SJF] registro ${registro} no descargable: ${e.message}`);
+    return null;
+  }
+  if (typeof html !== 'string') return null;
+
+  const strip = s => s ? s.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim() : '';
+  const grab = (re) => {
+    const m = html.match(re);
+    return m ? strip(m[1]) : '';
+  };
+
+  const rubro = grab(/class="[^"]*rubro[^"]*"[^>]*>([\s\S]*?)<\/[a-z]+>/i) || grab(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+  const texto = grab(/class="[^"]*texto[^"]*"[^>]*>([\s\S]*?)<\/[a-z]+>/i);
+  const precedente = grab(/class="[^"]*precedente[^"]*"[^>]*>([\s\S]*?)<\/[a-z]+>/i);
+  const organo = grab(/Instancia[^<]*<[^>]+>([^<]+)</i);
+  const epoca = grab(/Época[^<]*<[^>]+>([^<]+)</i);
+  const tipo = grab(/Tipo de Tesis[^<]*<[^>]+>([^<]+)</i);
+  const fecha = grab(/Fecha de Publicación[^<]*<[^>]+>([^<]+)</i);
+  const tesis_numero = grab(/Tesis[^<]*<[^>]+>([^<]+)</i);
+
+  // Discover ejecutoria — look for a link to /detalle/ejecutoria/<id> or a
+  // labeled section that exposes its registro number.
+  const ejecutoriaUrl =
+    (html.match(/href="(\/detalle\/ejecutoria\/(\d+))"/i) || [])[1] ||
+    (html.match(/href="(https?:\/\/sjf2\.scjn\.gob\.mx\/detalle\/ejecutoria\/\d+)"/i) || [])[1] ||
+    '';
+
+  const ejecutoria = await fetchEjecutoriaIfAny(
+    ejecutoriaUrl && ejecutoriaUrl.startsWith('http') ? ejecutoriaUrl
+    : ejecutoriaUrl ? `${SJF_BASE}${ejecutoriaUrl}` : ''
+  );
+
+  const item = normalizeTesis({
+    id: registro,
+    registro,
+    rubro,
+    texto,
+    precedente,
+    organo,
+    epoca,
+    tipo,
+    fecha,
+    numero: tesis_numero,
+    url,
+  });
+  item.ejecutoria = ejecutoria || { text_pending: true, url_pending: true };
+  return item;
+}
+
+// Fetch and parse an ejecutoria detail page. Returns null if URL missing or
+// the page can't be retrieved. Never invents fields.
+async function fetchEjecutoriaIfAny(url) {
+  if (!url || !/^https?:\/\//i.test(url)) return null;
+  let html = '';
+  try {
+    html = await fetchJSON(url, { headers: { 'Accept': 'text/html' } });
+  } catch (e) {
+    console.warn(`[SJF] ejecutoria ${url} no descargable: ${e.message}`);
+    return { source_url: url, text_pending: true, url_pending: false };
+  }
+  if (typeof html !== 'string') return { source_url: url, text_pending: true, url_pending: false };
+
+  const strip = s => s ? s.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim() : '';
+  const grab = (re) => { const m = html.match(re); return m ? strip(m[1]) : ''; };
+
+  const text = grab(/class="[^"]*(?:texto|contenido)[^"]*"[^>]*>([\s\S]*?)<\/[a-z]+>/i);
+  const tipo_juicio = grab(/(?:Tipo de Asunto|Tipo de Juicio|Recurso)[^<]*<[^>]+>([^<]+)</i);
+  const ponente = grab(/Ponente[^<]*<[^>]+>([^<]+)</i);
+  const fecha_resolucion = grab(/(?:Fecha de Resolución|Fecha del Fallo)[^<]*<[^>]+>([^<]+)</i);
+  const expediente = grab(/(?:Expediente|N[úu]mero de Expediente)[^<]*<[^>]+>([^<]+)</i);
+
+  return {
+    source_url: url,
+    text: text || null,
+    tipo_juicio: tipo_juicio || null,
+    ponente: ponente || null,
+    fecha_resolucion: fecha_resolucion || null,
+    expediente: expediente || null,
+    text_pending: !text,
+    url_pending: false,
+  };
+}
+
 async function main() {
   const queries = process.argv.includes('--queries')
     ? process.argv[process.argv.indexOf('--queries') + 1].split(',').map(s => s.trim()).filter(Boolean)
@@ -110,8 +202,34 @@ async function main() {
   try { existing = JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch {}
 
   const byId = new Map(existing.items.map(i => [String(i.id || i.registro), i]));
-  let added = 0, updated = 0, dropped = 0;
+  let added = 0, updated = 0, dropped = 0, hydrated = 0, ejecutorias = 0;
 
+  // Step 1 — Hydrate existing placeholder entries with the tesis content AND
+  // the linked ejecutoria. Both are tracked independently because some tesis
+  // (especially Octava/Novena Época) have no linked ejecutoria in SJF.
+  for (const [k, item] of byId) {
+    const needsTesis = item.text_pending && item.registro;
+    const needsEjec = item.ejecutoria && (item.ejecutoria.text_pending || item.ejecutoria.url_pending) && item.registro;
+    if (!needsTesis && !needsEjec) continue;
+    const fresh = await fetchTesisByRegistro(item.registro);
+    if (!fresh) continue;
+    const merged = { ...item };
+    if (fresh.texto) {
+      Object.assign(merged, fresh, { text_pending: false });
+      hydrated++;
+    }
+    if (fresh.ejecutoria && fresh.ejecutoria.text) {
+      merged.ejecutoria = { ...fresh.ejecutoria };
+      ejecutorias++;
+    } else if (fresh.ejecutoria) {
+      // Keep whatever URL we discovered even if the body isn't ready yet
+      merged.ejecutoria = { ...(item.ejecutoria || {}), ...fresh.ejecutoria };
+    }
+    merged.verified_at = new Date().toISOString().slice(0, 10);
+    byId.set(k, merged);
+  }
+
+  // Step 2 — Run keyword searches to discover new tesis.
   for (const q of queries) {
     const raws = await searchQuery(q);
     for (const r of raws) {
@@ -135,13 +253,13 @@ async function main() {
     metadata: {
       ...(existing.metadata || {}),
       last_updated: new Date().toISOString(),
-      last_run_stats: { queries: queries.length, added, updated, dropped_no_source: dropped },
+      last_run_stats: { queries: queries.length, added, updated, dropped_no_source: dropped, hydrated_placeholders: hydrated, ejecutorias_hydrated: ejecutorias },
     },
     items: [...byId.values()].sort((a, b) => (b.fecha || '').localeCompare(a.fecha || '')),
   };
 
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2));
-  console.log(`[SJF] OK · +${added} nuevas · ~${updated} actualizadas · -${dropped} sin fuente (descartadas)`);
+  console.log(`[SJF] OK · +${added} nuevas · ~${updated} actualizadas · ↻${hydrated} tesis · 📜${ejecutorias} ejecutorias · -${dropped} sin fuente (descartadas)`);
   console.log(`[SJF] Total tras ingesta: ${out.items.length}`);
   if (added + updated === 0 && dropped === 0) {
     console.log('[SJF] Sin cambios. Verificar manualmente la conectividad con sjf2.scjn.gob.mx.');

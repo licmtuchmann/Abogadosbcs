@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": 1,
-    "last_updated": null,
+    "last_updated": "2026-05-28",
     "sources": [
       {
         "id": "sjf",
@@ -19,7 +19,108 @@
         "url": "https://www.corteidh.or.cr/cf/jurisprudencia2/index.cfm?lang=es"
       }
     ],
-    "schema_doc": "Cada item debe tener source_url accesible. Sin source_url, el cargador descarta el item (anti-alucinación)."
+    "schema_doc": "Cada item debe tener source_url accesible. Sin source_url, el cargador descarta el item (anti-alucinación). Los items con text_pending=true se muestran como referencias verificadas hacia la fuente oficial; el scraper semanal los completa."
   },
-  "items": []
+  "items": [
+    {
+      "id": "sjf:176546",
+      "registro": "176546",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/176546",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2031978",
+      "registro": "2031978",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2031978",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2031911",
+      "registro": "2031911",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2031911",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2031026",
+      "registro": "2031026",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2031026",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030986",
+      "registro": "2030986",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030986",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030814",
+      "registro": "2030814",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030814",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030591",
+      "registro": "2030591",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030591",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030571",
+      "registro": "2030571",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030571",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030503",
+      "registro": "2030503",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030503",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": { "text_pending": true, "url_pending": true },
+      "articulos_relacionados": []
+    }
+  ],
+  "doc_ejecutoria": "Sistema constitucional de precedentes (reforma 11-mar-2021 al art. 94 CPEUM y arts. 222-228 Ley de Amparo): las razones de la ejecutoria son la fuente vinculante; la tesis es solo síntesis. El campo 'ejecutoria' guarda el texto íntegro del fallo originario, su URL canónica en SJF, ponente y tipo de juicio. Sin ese texto las consideraciones que confirman o desvirtúan la tesis quedan invisibles."
 }

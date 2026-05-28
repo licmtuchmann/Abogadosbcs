@@ -1,14 +1,16 @@
 import { useState } from 'react';
-import { ArrowLeft, Copy, Bookmark, CheckCircle2, FileText } from 'lucide-react';
+import { ArrowLeft, Copy, Bookmark, CheckCircle2, FileText, ScrollText, ExternalLink } from 'lucide-react';
 import SourceBadge from './SourceBadge';
 import { citePrecedente, copyToClipboard } from '../lib/citation';
 import { addNote, loadNotebooks } from '../lib/storage';
 
 export default function PrecedenteDetail({ precedente, onBack, onOpenArticle, articleIndex = {} }) {
   const p = precedente.raw || precedente;
+  const ej = p.ejecutoria || null;
   const cit = citePrecedente(p);
   const [copied, setCopied] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [tab, setTab] = useState('tesis');
 
   async function doCopy() {
     await copyToClipboard(cit.text + (p.source_url ? '\n' + p.source_url : ''));
@@ -55,9 +57,80 @@ export default function PrecedenteDetail({ precedente, onBack, onOpenArticle, ar
           <Action onClick={save} icon={<Bookmark size={14} />} label={saved ? '¡Guardado!' : 'Guardar en cuaderno'} active={saved} />
         </div>
 
-        <article className="article-prose mt-5 text-slate-800 whitespace-pre-wrap">
-          {p.texto || p.contenido || '(Sin texto en el dataset)'}
-        </article>
+        <div className="mt-5 flex gap-1 border-b border-slate-200">
+          <TabButton active={tab === 'tesis'} onClick={() => setTab('tesis')} icon={<FileText size={13} />}>
+            Tesis / Síntesis
+          </TabButton>
+          <TabButton active={tab === 'ejecutoria'} onClick={() => setTab('ejecutoria')} icon={<ScrollText size={13} />} badge={ej?.text ? 'disponible' : ej?.source_url ? 'enlace' : 'pendiente'}>
+            Ejecutoria (precedente)
+          </TabButton>
+        </div>
+
+        {tab === 'tesis' && (
+          p.text_pending ? (
+            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+              <div className="font-semibold mb-1">Texto pendiente de ingesta</div>
+              <p>
+                Esta tesis fue verificada manualmente y está registrada con su URL oficial en el Semanario Judicial de la Federación.
+                El cuerpo completo se carga con la actualización semanal o puedes consultarlo ahora en la fuente oficial:
+              </p>
+              <a
+                href={p.source_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-lg bg-amber-900 text-white text-sm font-medium hover:bg-amber-800"
+              >
+                Abrir en SJF — registro {p.registro} <ExternalLink size={12} />
+              </a>
+            </div>
+          ) : (
+            <article className="article-prose mt-4 text-slate-800 whitespace-pre-wrap">
+              {p.texto || p.contenido || '(Sin texto en el dataset)'}
+            </article>
+          )
+        )}
+
+        {tab === 'ejecutoria' && (
+          <div className="mt-4">
+            <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-[11px] text-emerald-900 mb-3">
+              <strong>Sistema constitucional de precedentes</strong> (art. 94 CPEUM, reforma 11-mar-2021 · arts. 222-228 Ley de Amparo):
+              las razones contenidas en la ejecutoria son lo vinculante; la tesis es solo síntesis. Citar el precedente sin leer
+              la ejecutoria expone a omitir matices que pueden confirmar o desvirtuar la tesis.
+            </div>
+
+            {!ej || (!ej.text && !ej.source_url) ? (
+              <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600">
+                Esta tesis no tiene una ejecutoria identificada todavía. El scraper la descubrirá automáticamente en el próximo
+                corrido semanal a partir de la página de la tesis.
+              </div>
+            ) : (
+              <>
+                <dl className="grid sm:grid-cols-2 gap-x-4 gap-y-1 text-[12px] text-slate-700 mb-3">
+                  {ej.tipo_juicio && (<><dt className="text-slate-500">Tipo de juicio</dt><dd className="font-medium">{ej.tipo_juicio}</dd></>)}
+                  {ej.expediente && (<><dt className="text-slate-500">Expediente</dt><dd className="font-medium">{ej.expediente}</dd></>)}
+                  {ej.ponente && (<><dt className="text-slate-500">Ponente</dt><dd className="font-medium">{ej.ponente}</dd></>)}
+                  {ej.fecha_resolucion && (<><dt className="text-slate-500">Resolución</dt><dd className="font-medium">{ej.fecha_resolucion}</dd></>)}
+                </dl>
+                {ej.source_url && (
+                  <a href={ej.source_url} target="_blank" rel="noopener noreferrer"
+                     className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded border bg-white border-emerald-300 text-emerald-800 hover:bg-emerald-50">
+                    <ExternalLink size={12} /> Abrir ejecutoria oficial
+                  </a>
+                )}
+                {ej.text ? (
+                  <article className="article-prose mt-4 text-slate-800 whitespace-pre-wrap text-[14px] leading-relaxed border-l-2 border-emerald-300 pl-4">
+                    {ej.text}
+                  </article>
+                ) : (
+                  <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+                    <div className="font-semibold mb-1">Texto íntegro de la ejecutoria pendiente</div>
+                    <p>El enlace al fallo está verificado; el cuerpo completo se descarga con la próxima ingesta semanal.</p>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+        )}
 
         {p.precedente && (
           <div className="mt-4 pt-4 border-t border-slate-200">
@@ -94,6 +167,22 @@ function Action({ onClick, icon, label, active }) {
       className={`inline-flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded border transition ${active ? 'bg-emerald-600 text-white border-emerald-600' : 'bg-white text-slate-700 border-slate-300 hover:border-slate-500'}`}
     >
       {active ? <CheckCircle2 size={14} /> : icon} {label}
+    </button>
+  );
+}
+
+function TabButton({ active, onClick, icon, badge, children }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`inline-flex items-center gap-1.5 text-sm px-3 py-2 border-b-2 -mb-px transition ${active ? 'border-slate-900 text-slate-900' : 'border-transparent text-slate-500 hover:text-slate-800'}`}
+    >
+      {icon} {children}
+      {badge && (
+        <span className={`text-[10px] px-1.5 py-0.5 rounded-full border ${badge === 'disponible' ? 'border-emerald-300 bg-emerald-50 text-emerald-800' : badge === 'enlace' ? 'border-amber-300 bg-amber-50 text-amber-800' : 'border-slate-300 bg-slate-50 text-slate-600'}`}>
+          {badge}
+        </span>
+      )}
     </button>
   );
 }

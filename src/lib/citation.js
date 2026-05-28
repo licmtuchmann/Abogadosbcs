@@ -17,8 +17,17 @@ export function citePrecedente(p) {
   if (p.fecha) parts.push(p.fecha);
   if (p.fuente) parts.push(p.fuente);
   const text = parts.join(', ');
-  const md = p.source_url ? `[${text}](${p.source_url})` : text;
-  return { text, markdown: md };
+  const ejecBits = [];
+  if (p.ejecutoria?.tipo_juicio) ejecBits.push(p.ejecutoria.tipo_juicio);
+  if (p.ejecutoria?.expediente) ejecBits.push(`exp. ${p.ejecutoria.expediente}`);
+  if (p.ejecutoria?.ponente) ejecBits.push(`ponente: ${p.ejecutoria.ponente}`);
+  if (p.ejecutoria?.fecha_resolucion) ejecBits.push(`resuelto ${p.ejecutoria.fecha_resolucion}`);
+  const ejecText = ejecBits.length ? ` — Ejecutoria: ${ejecBits.join(', ')}` : '';
+  const fullText = text + ejecText;
+  const md = p.source_url
+    ? `[${text}](${p.source_url})${p.ejecutoria?.source_url ? ` · [ejecutoria](${p.ejecutoria.source_url})` : ''}`
+    : fullText;
+  return { text: fullText, markdown: md };
 }
 
 function rom(n) {

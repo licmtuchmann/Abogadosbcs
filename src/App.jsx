@@ -160,9 +160,13 @@ export default function App() {
                     {query ? `${results.length} resultado${results.length === 1 ? '' : 's'} para "${query}"` : 'Empieza a escribir un derecho, tema o número de artículo (Ctrl+K)'}
                   </div>
                   <Results results={results} query={query} onOpen={openItem} />
-                  {precedenteCount === 0 && (
+                  {precedenteCount === 0 ? (
                     <div className="mt-3 text-[12px] text-slate-600 bg-slate-100 border border-slate-200 rounded-lg p-3">
                       <strong>Precedentes pendientes de ingesta.</strong> El pipeline <code className="mono">scripts/ingest</code> los descargará desde SJF/SCJN y CorteIDH; cada viernes la GitHub Action publica las novedades. Mientras tanto, la búsqueda opera sobre los {articleCount} artículos vigentes del CNPP.
+                    </div>
+                  ) : (
+                    <div className="mt-3 text-[12px] text-slate-600 bg-emerald-50 border border-emerald-200 rounded-lg p-3">
+                      <strong>{precedenteCount}</strong> precedente{precedenteCount === 1 ? '' : 's'} con URL oficial verificada. Los que están marcados <em>texto pendiente</em> abren directamente la ficha del SJF; el contenido se carga con la actualización semanal.
                     </div>
                   )}
                 </div>

@@ -36,6 +36,16 @@ export default function Results({ results, query, onOpen, emptyHint }) {
                       <History size={10} /> {r.item.raw.history.length} reforma{r.item.raw.history.length > 1 ? 's' : ''}
                     </span>
                   )}
+                  {r.item.kind === 'precedente' && r.item.text_pending && (
+                    <span className="inline-flex items-center gap-1 text-[10px] text-slate-600 bg-slate-100 border border-slate-200 rounded px-1.5 py-0.5">
+                      texto pendiente · abre en SJF
+                    </span>
+                  )}
+                  {r.item.kind === 'precedente' && r.item.has_ejecutoria && (
+                    <span className="inline-flex items-center gap-1 text-[10px] text-emerald-800 bg-emerald-50 border border-emerald-200 rounded px-1.5 py-0.5">
+                      con ejecutoria
+                    </span>
+                  )}
                 </div>
                 <div
                   className="text-[15px] text-slate-900 font-medium mt-0.5 line-clamp-2"

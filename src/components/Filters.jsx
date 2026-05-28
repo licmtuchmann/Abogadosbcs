@@ -54,6 +54,12 @@ export default function Filters({ value, onChange, articleCount, precedenteCount
           </Chip>
         ))}
       </Group>
+
+      <Group title="Sistema de precedentes (post-2021)">
+        <Chip active={!!value.con_ejecutoria} onClick={() => set('con_ejecutoria', !value.con_ejecutoria)}>
+          Solo precedentes con ejecutoria disponible
+        </Chip>
+      </Group>
     </div>
   );
 }

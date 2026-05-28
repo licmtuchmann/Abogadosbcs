@@ -64,19 +64,33 @@ export function makeIndex(dataset) {
   }
 
   for (const p of dataset.precedentes.items) {
+    const headingFallback = p.rubro || p.titulo || (p.text_pending ? `Tesis SJF · registro ${p.registro || p.id}` : '');
+    const ej = p.ejecutoria || {};
     docs.push({
       kind: 'precedente',
       id: 'pre:' + (p.id || p.registro || p.numero),
       label: p.numero || p.registro || p.id || 'Tesis',
-      heading: p.rubro || p.titulo || '',
-      title: `${p.rubro || p.titulo || ''}`,
-      body: [p.texto || p.contenido || '', p.rubro || '', p.precedente || ''].join('\n'),
+      heading: headingFallback,
+      title: `${headingFallback}`,
+      // Index the ejecutoria body too — it's where the binding reasons live
+      body: [
+        p.texto || p.contenido || '',
+        p.rubro || '',
+        p.precedente || '',
+        p.registro || '',
+        ej.text || '',
+        ej.tipo_juicio || '',
+        ej.expediente || '',
+      ].join('\n'),
       organo: p.organo || p.organo_emisor || '',
       tipo: p.tipo || '',
       epoca: p.epoca || '',
       fecha: p.fecha || '',
       tema: p.tema || '',
       articulos_relacionados: p.articulos_relacionados || [],
+      text_pending: !!p.text_pending,
+      has_ejecutoria: !!(ej.text || ej.source_url),
+      ejecutoria_pending: !!(ej.text_pending || ej.url_pending),
       raw: p,
     });
   }
@@ -126,6 +140,7 @@ function matchesFilters(d, filters) {
   if (filters.libro && filters.libro !== 'todos' && d.kind === 'articulo') {
     if (!d.book || !d.book.toLowerCase().includes(filters.libro.toLowerCase())) return false;
   }
+  if (filters.con_ejecutoria === true && d.kind === 'precedente' && !d.has_ejecutoria) return false;
   return true;
 }
 

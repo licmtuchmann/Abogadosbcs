@@ -36,7 +36,9 @@ if (pre) {
     console.error(`PRECEDENTES: ${bad.length} entradas sin URL fuente válida — anti-alucinación las descarta en runtime.`);
     errors += Math.min(bad.length, 1);
   }
-  console.log(`PRECEDENTES: ${pre.items?.length || 0} ítems totales (${(pre.items || []).filter(p => p.source_url).length} con fuente)`);
+  const pending = (pre.items || []).filter(p => p.text_pending);
+  const full = (pre.items || []).filter(p => !p.text_pending && (p.texto || p.contenido));
+  console.log(`PRECEDENTES: ${pre.items?.length || 0} ítems totales (${full.length} con texto · ${pending.length} pendientes de ingesta · ${(pre.items || []).filter(p => p.source_url).length} con fuente)`);
 }
 
 if (errors) {
