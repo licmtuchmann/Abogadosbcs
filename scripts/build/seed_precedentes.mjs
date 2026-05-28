@@ -245,7 +245,7 @@ const tesis = [
 // Placeholders previos (tesis verificadas por URL, contenido pendiente de ingesta)
 const placeholders = [
   '176546', '2030503', '2030571', '2030591', '2030814',
-  '2030986', '2031026', '2031911', '2031978',
+  '2030986', '2031026', '2031911', '2031978', '2032049',
 ].map(r => ({
   id: 'sjf:' + r,
   registro: r,

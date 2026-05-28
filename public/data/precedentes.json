@@ -22,7 +22,7 @@
     "schema_doc": "Cada item debe tener source_url accesible. Sin source_url, el cargador descarta el item (anti-alucinación). Los items con text_pending=true son referencias verificadas hacia la fuente oficial; el scraper semanal los completa.",
     "doc_ejecutoria": "Sistema constitucional de precedentes (reforma 11-mar-2021 al art. 94 CPEUM y arts. 222-228 Ley de Amparo): las razones de la ejecutoria son la fuente vinculante; la tesis es solo síntesis. El campo 'ejecutoria' guarda el texto íntegro del fallo originario (cuando esté disponible), su URL canónica en SJF, ponente y tipo de juicio. Sin ese texto las consideraciones que confirman o desvirtúan la tesis quedan invisibles.",
     "seeded_count": 7,
-    "placeholder_count": 9
+    "placeholder_count": 10
   },
   "items": [
     {
@@ -432,6 +432,20 @@
       "id": "sjf:2031978",
       "registro": "2031978",
       "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2031978",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032049",
+      "registro": "2032049",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032049",
       "fuente": "Semanario Judicial de la Federación",
       "verified_by": "manual",
       "verified_at": "2026-05-28",
