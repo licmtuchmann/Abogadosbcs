@@ -95,6 +95,29 @@ export function makeIndex(dataset) {
     });
   }
 
+  for (const c of (dataset.compendios?.items || [])) {
+    docs.push({
+      kind: 'compendio',
+      id: 'comp:' + c.id,
+      label: c.serie || c.publisher || 'Compendio',
+      heading: c.title,
+      title: c.title,
+      body: [
+        c.title || '',
+        c.topic || '',
+        (c.tags || []).join(' '),
+        c.text || '',
+      ].join('\n'),
+      organo: c.publisher || '',
+      tipo: c.serie || 'Compendio',
+      year: c.year,
+      tema: c.topic,
+      tags: c.tags || [],
+      text_pending: !!c.text_pending,
+      raw: c,
+    });
+  }
+
   const fuse = new Fuse(docs, {
     includeScore: true,
     includeMatches: true,
@@ -133,7 +156,14 @@ function applyFilters(docs, filters) {
 }
 
 function matchesFilters(d, filters) {
-  if (filters.kind && filters.kind !== 'todos' && d.kind !== filters.kind) return false;
+  if (filters.kind && filters.kind !== 'todos') {
+    if (filters.kind === 'precedentes') {
+      // Backwards-compat: legacy id mapped to a single kind
+      if (d.kind !== 'precedente') return false;
+    } else if (d.kind !== filters.kind) {
+      return false;
+    }
+  }
   if (filters.organo && filters.organo !== 'todos' && d.kind === 'precedente') {
     if (!d.organo || !d.organo.toLowerCase().includes(filters.organo.toLowerCase())) return false;
   }

@@ -7,6 +7,7 @@ import Filters from './components/Filters';
 import Results from './components/Results';
 import ArticleDetail from './components/ArticleDetail';
 import PrecedenteDetail from './components/PrecedenteDetail';
+import CompendioDetail from './components/CompendioDetail';
 import Notebook from './components/Notebook';
 import DeadlineCalc from './components/DeadlineCalc';
 import Templates from './components/Templates';
@@ -45,6 +46,7 @@ export default function App() {
 
   function openItem(item) {
     if (item.kind === 'articulo') setSelected({ kind: 'articulo', article: item.raw });
+    else if (item.kind === 'compendio') setSelected({ kind: 'compendio', compendio: item });
     else setSelected({ kind: 'precedente', precedente: item });
   }
   function openNote(note) {
@@ -78,6 +80,7 @@ export default function App() {
   const { metadata, articles } = data.cnpp;
   const articleCount = articles.length;
   const precedenteCount = data.precedentes.items.length;
+  const compendioCount = data.compendios?.items?.length || 0;
 
   return (
     <div className={`min-h-full ${hearing ? 'hearing-mode' : ''}`}>
@@ -136,6 +139,11 @@ export default function App() {
                 relatedPrecedentes={precedentesForArticle(selected.article.id)}
                 onOpenPrecedente={p => setSelected({ kind: 'precedente', precedente: p })}
               />
+            ) : selected.kind === 'compendio' ? (
+              <CompendioDetail
+                compendio={selected.compendio}
+                onBack={() => setSelected(null)}
+              />
             ) : (
               <PrecedenteDetail
                 precedente={selected.precedente}
@@ -149,7 +157,7 @@ export default function App() {
               <SearchBar value={query} onChange={setQuery} onClear={() => setQuery('')} />
               <div className="grid lg:grid-cols-[280px_1fr] gap-4">
                 <aside className="space-y-3 lg:sticky lg:top-[112px] lg:self-start">
-                  <Filters value={filters} onChange={setFilters} articleCount={articleCount} precedenteCount={precedenteCount} />
+                  <Filters value={filters} onChange={setFilters} articleCount={articleCount} precedenteCount={precedenteCount} compendioCount={compendioCount} />
                   <div className="text-[11px] text-slate-500 leading-relaxed border-t border-slate-200 pt-3">
                     <div className="font-semibold text-slate-700 mb-1">Garantías de integridad</div>
                     Todas las entradas requieren URL fuente. Si no hay coincidencias verificables, el resultado es <em>No encontrado</em>: la app no inventa textos ni precedentes.
@@ -160,13 +168,13 @@ export default function App() {
                     {query ? `${results.length} resultado${results.length === 1 ? '' : 's'} para "${query}"` : 'Empieza a escribir un derecho, tema o número de artículo (Ctrl+K)'}
                   </div>
                   <Results results={results} query={query} onOpen={openItem} />
-                  {precedenteCount === 0 ? (
+                  {precedenteCount === 0 && compendioCount === 0 ? (
                     <div className="mt-3 text-[12px] text-slate-600 bg-slate-100 border border-slate-200 rounded-lg p-3">
                       <strong>Precedentes pendientes de ingesta.</strong> El pipeline <code className="mono">scripts/ingest</code> los descargará desde SJF/SCJN y CorteIDH; cada viernes la GitHub Action publica las novedades. Mientras tanto, la búsqueda opera sobre los {articleCount} artículos vigentes del CNPP.
                     </div>
                   ) : (
                     <div className="mt-3 text-[12px] text-slate-600 bg-emerald-50 border border-emerald-200 rounded-lg p-3">
-                      <strong>{precedenteCount}</strong> precedente{precedenteCount === 1 ? '' : 's'} con URL oficial verificada. Los que están marcados <em>texto pendiente</em> abren directamente la ficha del SJF; el contenido se carga con la actualización semanal.
+                      <strong>{precedenteCount}</strong> precedente{precedenteCount === 1 ? '' : 's'} y <strong>{compendioCount}</strong> compendio{compendioCount === 1 ? '' : 's'} (SCJN / UNAM) con URL oficial verificada. El contenido marcado <em>texto pendiente</em> abre la fuente original; la ingesta semanal lo importa al índice.
                     </div>
                   )}
                 </div>

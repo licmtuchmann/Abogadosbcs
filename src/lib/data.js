@@ -15,15 +15,19 @@ async function fetchJSON(path, fallback) {
 }
 
 export async function loadDataset() {
-  const [cnpp, precedentes, manifest] = await Promise.all([
+  const [cnpp, precedentes, compendios, manifest] = await Promise.all([
     fetchJSON('data/cnpp.json', { articles: [], repealed: [], metadata: {} }),
     fetchJSON('data/precedentes.json', { items: [], metadata: {} }),
+    fetchJSON('data/compendios.json', { items: [], metadata: {} }),
     fetchJSON('data/manifest.json', { built_at: null }),
   ]);
 
   // Strict filter: drop any precedente that doesn't have a verifiable source URL
   const verified = (precedentes.items || []).filter(p =>
     p && p.source_url && /^https?:\/\//i.test(p.source_url)
+  );
+  const verifiedCompendios = (compendios.items || []).filter(c =>
+    c && c.source_url && /^https?:\/\//i.test(c.source_url)
   );
 
   return {
@@ -36,6 +40,11 @@ export async function loadDataset() {
       metadata: precedentes.metadata || {},
       items: verified,
       dropped: (precedentes.items?.length || 0) - verified.length,
+    },
+    compendios: {
+      metadata: compendios.metadata || {},
+      items: verifiedCompendios,
+      dropped: (compendios.items?.length || 0) - verifiedCompendios.length,
     },
     manifest,
   };

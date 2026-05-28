@@ -4,6 +4,7 @@ const KINDS = [
   { id: 'todos', label: 'Todos' },
   { id: 'articulo', label: 'CNPP' },
   { id: 'precedente', label: 'Precedentes' },
+  { id: 'compendio', label: 'Compendios SCJN/UNAM' },
 ];
 
 const ORGANOS = [
@@ -22,7 +23,7 @@ const LIBROS = [
   { id: 'SEGUNDO', label: 'Libro Segundo — Procedimiento' },
 ];
 
-export default function Filters({ value, onChange, articleCount, precedenteCount }) {
+export default function Filters({ value, onChange, articleCount, precedenteCount, compendioCount = 0 }) {
   function set(key, v) { onChange({ ...value, [key]: v }); }
 
   return (
@@ -31,7 +32,7 @@ export default function Filters({ value, onChange, articleCount, precedenteCount
         <Filter size={14} /> Filtros
       </div>
 
-      <Group title={`Tipo de fuente (${articleCount} arts. · ${precedenteCount} precedentes)`}>
+      <Group title={`Tipo de fuente (${articleCount} arts. · ${precedenteCount} precedentes · ${compendioCount} compendios)`}>
         {KINDS.map(k => (
           <Chip key={k.id} active={(value.kind || 'todos') === k.id} onClick={() => set('kind', k.id)}>
             {k.label}

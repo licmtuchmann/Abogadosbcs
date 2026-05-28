@@ -36,6 +36,9 @@ jobs:
       - name: Refresh CIDH precedentes
         run: node scripts/ingest/cidh.mjs || true
 
+      - name: Hydrate SCJN/UNAM compendios (PDF → texto)
+        run: node scripts/ingest/compendios.mjs || true
+
       - name: Verify integrity
         run: npm run verify
 

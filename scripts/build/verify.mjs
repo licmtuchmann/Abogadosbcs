@@ -10,6 +10,7 @@ import path from 'node:path';
 
 const cnppPath = path.resolve('public/data/cnpp.json');
 const prePath = path.resolve('public/data/precedentes.json');
+const compPath = path.resolve('public/data/compendios.json');
 
 let errors = 0;
 
@@ -39,6 +40,18 @@ if (pre) {
   const pending = (pre.items || []).filter(p => p.text_pending);
   const full = (pre.items || []).filter(p => !p.text_pending && (p.texto || p.contenido));
   console.log(`PRECEDENTES: ${pre.items?.length || 0} ítems totales (${full.length} con texto · ${pending.length} pendientes de ingesta · ${(pre.items || []).filter(p => p.source_url).length} con fuente)`);
+}
+
+const comp = load(compPath);
+if (comp) {
+  const bad = (comp.items || []).filter(c => !c.source_url || !/^https?:\/\//i.test(c.source_url));
+  if (bad.length) {
+    console.error(`COMPENDIOS: ${bad.length} entradas sin URL fuente válida.`);
+    errors += Math.min(bad.length, 1);
+  }
+  const pending = (comp.items || []).filter(c => c.text_pending);
+  const full = (comp.items || []).filter(c => !c.text_pending && c.text);
+  console.log(`COMPENDIOS: ${comp.items?.length || 0} ítems totales (${full.length} con texto · ${pending.length} pendientes de ingesta · ${(comp.items || []).filter(c => c.source_url).length} con fuente)`);
 }
 
 if (errors) {

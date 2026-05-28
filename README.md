@@ -21,17 +21,27 @@ Herramienta de búsqueda integrada del **Código Nacional de Procedimientos Pena
 ```
 public/data/
   cnpp.json           # 490 artículos del CNPP vigente + historial de reformas
-  precedentes.json    # Jurisprudencia/precedentes (SJF, SCJN, CorteIDH) — vacío inicial
+  precedentes.json    # Tesis SJF + ejecutorias (sistema constitucional de precedentes)
+  compendios.json     # Cuadernos de jurisprudencia SCJN + obras BJV-UNAM (PDFs oficiales)
   manifest.json
 scripts/
   build/parse_cnpp.mjs   # Convierte .doc/.txt oficiales a JSON estructurado
   build/verify.mjs       # Integridad (anti-alucinación)
   ingest/cnpp.mjs        # Descarga semanal desde diputados.gob.mx
-  ingest/sjf.mjs         # Scraper SCJN — Semanario Judicial
+  ingest/sjf.mjs         # Scraper SCJN — tesis + ejecutoria de cada tesis
   ingest/cidh.mjs        # Scraper CorteIDH
+  ingest/compendios.mjs  # Descarga PDFs SCJN/UNAM y extrae texto con pdftotext
 src/
   App.jsx / components / lib
 ```
+
+### Categorías de fuentes
+
+| Categoría    | Qué es                                                            | Uso típico                                   |
+|--------------|-------------------------------------------------------------------|----------------------------------------------|
+| CNPP         | Artículos del Código vigente con historial de reforma             | Fundar y citar normas procesales             |
+| Precedente   | Tesis/jurisprudencia individual SCJN + su ejecutoria              | Sustentar criterio vinculante (art. 94 CPEUM)|
+| Compendio    | Cuadernos de Jurisprudencia SCJN, Tomos BJV-UNAM (PDFs)           | Investigación temática y argumentación       |
 
 ## Desarrollo local
 

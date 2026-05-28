@@ -11,7 +11,8 @@
     "data:cnpp": "node scripts/build/parse_cnpp.mjs",
     "data:sjf": "node scripts/ingest/sjf.mjs",
     "data:cidh": "node scripts/ingest/cidh.mjs",
-    "data:all": "npm run data:cnpp && npm run data:sjf && npm run data:cidh",
+    "data:compendios": "node scripts/ingest/compendios.mjs",
+    "data:all": "npm run data:cnpp && npm run data:sjf && npm run data:cidh && npm run data:compendios",
     "verify": "node scripts/build/verify.mjs"
   },
   "dependencies": {
