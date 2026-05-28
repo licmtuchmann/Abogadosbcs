@@ -41,6 +41,11 @@ export default function Results({ results, query, onOpen, emptyHint }) {
                       texto pendiente · abre en SJF
                     </span>
                   )}
+                  {r.item.kind === 'precedente' && r.item.raw?.rubro_partial && (
+                    <span className="inline-flex items-center gap-1 text-[10px] text-amber-700 bg-amber-50 border border-amber-200 rounded px-1.5 py-0.5">
+                      rubro del listado · verificar SJF
+                    </span>
+                  )}
                   {r.item.kind === 'precedente' && r.item.has_ejecutoria && (
                     <span className="inline-flex items-center gap-1 text-[10px] text-emerald-800 bg-emerald-50 border border-emerald-200 rounded px-1.5 py-0.5">
                       con ejecutoria

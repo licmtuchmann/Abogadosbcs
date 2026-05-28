@@ -22,7 +22,15 @@
     "schema_doc": "Cada item debe tener source_url accesible. Sin source_url, el cargador descarta el item (anti-alucinación). Los items con text_pending=true son referencias verificadas hacia la fuente oficial; el scraper semanal los completa.",
     "doc_ejecutoria": "Sistema constitucional de precedentes (reforma 11-mar-2021 al art. 94 CPEUM y arts. 222-228 Ley de Amparo): las razones de la ejecutoria son la fuente vinculante; la tesis es solo síntesis. El campo 'ejecutoria' guarda el texto íntegro del fallo originario (cuando esté disponible), su URL canónica en SJF, ponente y tipo de juicio. Sin ese texto las consideraciones que confirman o desvirtúan la tesis quedan invisibles.",
     "seeded_count": 7,
-    "placeholder_count": 10
+    "placeholder_count": 10,
+    "last_listado_run": {
+      "timestamp": "2026-05-28T23:53:17.267Z",
+      "source": "https://sjfsemanal.scjn.gob.mx/listado-resultado-tesis",
+      "source_pdf_local": "listadodeTesis20260528 (publicación viernes 22-may-2026)",
+      "parsed_count": 20,
+      "added": 20,
+      "updated": 0
+    }
   },
   "items": [
     {
@@ -448,6 +456,426 @@
       "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032049",
       "fuente": "Semanario Judicial de la Federación",
       "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032166",
+      "registro": "2032166",
+      "numero": "P./J. 89/2026 (12a.)",
+      "rubro": "INCUMPLIMIENTO DE OBLIGACIONES ALIMENTARIAS. LA RESOLUCIÓN JUDICIAL EN MATERIA FAMILIAR QUE FIJA LA PENSIÓN ALIMENTICIA CONSTITUYE COSA JUZGADA RESPECTO DE LA OBLIGACIÓN Y LA CAPACIDAD ECONÓMICA DEL DEUDOR, POR LO QUE EN LA Judicial de la INSTANCIA PENAL NO SE PUEDEN REVALORAR ESOS Federación y, por ASPECTOS. ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032166",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032167",
+      "registro": "2032167",
+      "numero": "P./J. 90/2026 (12a.)",
+      "rubro": "INCUMPLIMIENTO DE OBLIGACIONES ALIMENTARIAS. SE ACTUALIZA LA MODALIDAD AGRAVADA CON EL INCUMPLIMIENTO PARCIAL O TOTAL DE LA PENSIÓN ALIMENTICIA FIJADA POR RESOLUCIÓN JUDICIAL SIN MOTIVO JUSTIFICADO (ARTÍCULO 201 DEL CÓDIGO Judicial de la PENAL PARA EL ESTADO DE MORELOS). Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032167",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032179",
+      "registro": "2032179",
+      "numero": "P./J. 85/2026 (12a.)",
+      "rubro": "REGISTRO NACIONAL DE VALORES. EL ARTÍCULO 108 DE LA LEY RELATIVA NO VIOLA EL PRINCIPIO DE SEGURIDAD JURÍDICA (LEGISLACIÓN VIGENTE HASTA EL 28 DE DICIEMBRE DE 2023). Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032179",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032147",
+      "registro": "2032147",
+      "numero": "P./J. 94/2026 (12a.)",
+      "rubro": "ACCESOAEMPLEOSOCARGOSPÚ BLICOSE N CONDICIONES DE IGUALDAD. LA RESTRICCIÓN A LAS PERSONAS NOTARIAS PARA SOLICITAR LICENCIA ÚNICAMENTE A CARGOS DE ELECCIÓN POPULAR, VULNERA ESE DERECHO (LEGISLACIÓN DEL ESTADO DE Judicial de la COLIMA). Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.). Pág. 1 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032147",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032148",
+      "registro": "2032148",
+      "numero": "P./J. 82/2026 (12a.)",
+      "rubro": "ACCESO A LA INFORMACIÓN PÚBLICA. LOS COBROS DERIVADOSDELEJERCICIODEESEDERECH O REQUIEREN UNA MOTIVACIÓN REFORZADA DEL LEGISLADOR PARA SER ACORDES CON EL PRINCIPIO DE GRATUIDAD. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032148",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032157",
+      "registro": "2032157",
+      "numero": "P./J. 88/2026 (12a.)",
+      "rubro": "CATEGORÍ ASADMINISTRATIVASMUNICIPALE S . INTERPRETACIÓN DEL ARTÍCULO 18 DE LA LEY ORGÁNICA MUNICIPAL DEL ESTADO DE OAXACA. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032157",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032156",
+      "registro": "2032156",
+      "numero": "P./J. 81/2026 (12a.)",
+      "rubro": "CONTROVERSIA CONSTITUCIONAL. PROCEDE EL SOBRESEIMIENTO CUANDO SÓLO SE IMPUGNA UNA NORMA DE VIGENCIA ANUAL Y HAN CESADO SUS EFECTOS. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032156",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032160",
+      "registro": "2032160",
+      "numero": "P./J. 84/2026 (12a.)",
+      "rubro": "DERECHO DE ACCESO A LA INFORMACIÓN. LAS NORMAS QUE PREVÉN COBROS POR LA DIGITALIZACIÓN DE INFORMACIÓ NENDISPOSITIVOSMAGNÉ TICO S APORTADOS POR EL SOLICITANTE, VIOLAN EL PRINCIPIO DE GRATUIDAD. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.). Pág. 2 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032160",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032161",
+      "registro": "2032161",
+      "numero": "P./J. 91/2026 (12a.)",
+      "rubro": "DERECHOS POR EL USO O APROVECHAMIENTO DE SERVICIO S , BIENESYESPACIOSPÚ BLICO S MUNICIPALES. LA FALTA DE IDENTIFICACIÓN DEL SERVICIO PÚBLICO QUE DA ORIGEN A LA CONTRIBUCIÓN VULNERA LOS PRINCIPIOS DE LEGALIDAD Y SEGURIDAD Judicial de la JURÍDICA. Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032161",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032162",
+      "registro": "2032162",
+      "numero": "P./J. 83/2026 (12a.)",
+      "rubro": "DERECHOS POR SERVICIOS DE EXPEDICIÓN DE COPIAS SIMPLES Y CERTIFICADAS. LA NORMA QUE ESTABLECE UN COBRO MAYOR POR LA CALIDAD DE ESTUDIANTE VIOLA LOS PRINCIPIOS DE PROPORCIONALIDAD Y EQUIDAD TRIBUTARIAS. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032162",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032165",
+      "registro": "2032165",
+      "numero": "P./J. 93/2026 (12a.)",
+      "rubro": "FALTAS ADMINISTRATIVAS MUNICIPALES. LAS NORMAS QUE SANCIONAN PROFERIR INSULTOS, FALTAS DE RESPETO O AGRESIONES VERBALES, VULNERAN LA SEGURIDAD JURÍDICA Y EL PRINCIPIO DE LEGALIDAD EN SU VERTIENTE DE TAXATIVIDAD. Judicial de la Federación. La sentencia de la cual deriva se publicó el diciembre de 2025 a las 10:24 horas y, por ende, las consideraciones que contiene la resolución, aprobadas por 6 votos o más, en términos de lo dispuesto en el artículo 43 de la respectiva Ley Reglamentaria, se consideran de a partir del diciembre de 2025, para los efectos previstos en el punto octavo del Acuerdo General Plenario 7/2025 (12a.). Pág. 3 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032165",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032151",
+      "registro": "2032151",
+      "numero": "P./J. 86/2026 (12a.)",
+      "rubro": "ORGANIZACIÓN ADMINISTRATIVA DE LOS MUNICIPIOS. EL DECRETO NÚMERO 2450 DEL CONGRESO DEL ESTADO DE OAXACA VULNERA EL ARTÍCULO 115, FRACCIÓN II, CONSTITUCIONAL. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032151",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032173",
+      "registro": "2032173",
+      "numero": "P./J. 95/2026 (12a.)",
+      "rubro": "PARLAMENTO ABIERTO. LOS CONGRESOS LOCALES NO TIENENLAOBLIGACIÓ NCONSTITUCIONALD E REALIZARLO PARA EFECTO DE QUE SE RECONOZCA LA VALIDEZ DE SUS PROCESOS LEGISLATIVOS. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032173",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032176",
+      "registro": "2032176",
+      "numero": "P./J. 92/2026 (12a.)",
+      "rubro": "PROPORCIONALIDAD TRIBUTARIA. LOS COBROS DE DERECHOSPORSERVICIOSDEBÚ SQUEDAD E DOCUMENTOS EN ARCHIVOS U OFICINAS MUNICIPALES VULNERAN ESE PRINCIPIO. Judicial de la Federación. La sentencia de la cual deriva se publicó el diciembre de 2025 a las 10:24 horas y, por ende, las consideraciones que contiene la resolución, aprobadas por 6 votos o más, en términos de lo dispuesto en el artículo 43 de la respectiva Ley Reglamentaria, se consideran de a partir del diciembre de 2025, para los efectos previstos en el punto octavo del Acuerdo General Plenario 7/2025 (12a.). Pág. 4 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032176",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032178",
+      "registro": "2032178",
+      "numero": "P./J. 87/2026 (12a.)",
+      "rubro": "RECONOCIMIENTO DE CATEGORÍAS ADMINISTRATIVAS MUNICIPALES (AGENCIA MUNICIPAL O DE POLICÍA). EL ARTÍCULO 18 DE LA LEY ORGÁNICA MUNICIPAL DEL ESTADO DE OAXACA CONFIGURA UN MECANISMO DE COLABORACIÓN ENTRE EL CONGRESO LOCAL Y LOS Judicial de la AYUNTAMIENTOS PARA SU OTORGAMIENTO. Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032178",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032146",
+      "registro": "2032146",
+      "numero": "P. II/2026 (12a.)",
+      "rubro": "ABORTO FORZADO. LA PORCIÓN \"CON O SIN EL CONOCIMIENTO DE LA VÍCTIMA\" DEL ARTÍCULO 311 BIS, PÁRRAFO PRIMERO, DEL CÓDIGO PENAL PARA EL ESTADO DE ZACATECAS, VIOLA EL PRINCIPIO DE LEGALIDAD, EN SU VERTIENTE DE TAXATIVIDAD. Judicial de la Federación.",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032146",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032158",
+      "registro": "2032158",
+      "numero": "P. V/2026 (12a.)",
+      "rubro": "DELITO CONTRA LA FUNCIÓN NOTARIAL. EL PREVISTO EN EL ARTÍCULO 140 DE LA LEY DEL NOTARIADO DEL ESTADO DE COLIMA VULNERA EL PRINCIPIO DE LEGALIDAD, EN SU VERTIENTE DE TAXATIVIDAD. Judicial de la Federación.",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032158",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032168",
+      "registro": "2032168",
+      "numero": "P. IV/2026 (12a.)",
+      "rubro": "LIBERTAD DE TRABAJO. LA RESTRICCIÓN A LAS PERSONAS NOTARIAS PARA SOLICITAR LICENCIA ÚNICAMENTE A CARGOS DE ELECCIÓN POPULAR, VULNERA ESE DERECHO (LEGISLACIÓN DEL ESTADO DE COLIMA). Judicial de la Federación.",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032168",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032175",
+      "registro": "2032175",
+      "numero": "P. III/2026 (12a.)",
+      "rubro": "PROGRESIVIDAD DE LOS DERECHOS HUMANOS, EN SU VERTIENTE DE NO REGRESIVIDAD. LA RESTRICCIÓN A UN DERECHOPREVIAMENTERECONOCIDOALA S PERSONAS NOTARIAS PARA ACCEDER A CARGOS PÚBLICOS DISTINTOS DE LOS DE ELECCIÓN POPULAR Judicial de la VULNERA ESE PRINCIPIO (LEGISLACIÓN DEL ESTADO DE Federación. COLIMA).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032175",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032170",
+      "registro": "2032170",
+      "numero": "PR.A.C.CS. J/4 C (12a.)",
+      "rubro": "MULTA IMPUESTA COMO CORRECTIVO DISCIPLINARIO EN EL JUICIO ORDINARIO MERCANTIL. PREVIO A PROMOVER EL AMPARO INDIRECTO EN SU CONTRA NO ESNECESARIOAGOTARALGÚ NMEDIODEIMPUGNACIÓ NPREVISTOENLALEGISLACIÓ N Judicial de la PROCESAL CIVIL, YA QUE LA LEGISLACIÓN MERCANTIL Federación y, por ESTABLECE SU PROPIO SISTEMA DE RECURSOS. ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.). Pág. 5 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación Pág. 6 de 6 Fecha de impresión 28/05/2026",
+      "rubro_partial": false,
+      "organo": "Plenos Regionales",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032170",
+      "verified_by": "sjf_listado_weekly",
       "verified_at": "2026-05-28",
       "text_pending": true,
       "ejecutoria": {

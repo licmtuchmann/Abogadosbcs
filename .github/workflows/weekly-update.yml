@@ -30,7 +30,10 @@ jobs:
       - name: Refresh CNPP from Cámara de Diputados
         run: node scripts/ingest/cnpp.mjs || true
 
-      - name: Refresh SJF (SCJN) precedentes
+      - name: Ingest weekly SJF listing (descubre tesis nuevas del viernes)
+        run: node scripts/ingest/sjf_listado.mjs || true
+
+      - name: Refresh SJF (SCJN) precedentes — hidrata placeholders
         run: node scripts/ingest/sjf.mjs || true
 
       - name: Refresh CIDH precedentes
