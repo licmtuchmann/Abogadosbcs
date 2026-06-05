@@ -106,7 +106,11 @@ export function makeIndex(dataset) {
         c.title || '',
         c.topic || '',
         (c.tags || []).join(' '),
-        c.text || '',
+        // With lazy-load, full text lives in a separate file. The snippet
+        // (~1.2 KB) is enough for Fuse to surface the right compendio when
+        // the user searches by a term that appears in the body; the full
+        // detail view fetches the complete text on click.
+        c.text || c.snippet || '',
       ].join('\n'),
       organo: c.publisher || '',
       tipo: c.serie || 'Compendio',
@@ -114,6 +118,7 @@ export function makeIndex(dataset) {
       tema: c.topic,
       tags: c.tags || [],
       text_pending: !!c.text_pending,
+      lazy: !!c.detail_url && !c.text,
       raw: c,
     });
   }

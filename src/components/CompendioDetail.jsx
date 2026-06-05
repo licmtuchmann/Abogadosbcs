@@ -1,13 +1,30 @@
-import { useState } from 'react';
-import { ArrowLeft, ExternalLink, Copy, Bookmark, CheckCircle2, FileText, Library, Download } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ArrowLeft, ExternalLink, Copy, Bookmark, CheckCircle2, FileText, Library, Download, Loader2 } from 'lucide-react';
 import SourceBadge from './SourceBadge';
 import { copyToClipboard } from '../lib/citation';
 import { addNote, loadNotebooks } from '../lib/storage';
+import { loadCompendioDetail } from '../lib/data';
 
 export default function CompendioDetail({ compendio, onBack }) {
-  const c = compendio.raw || compendio;
+  const base = compendio.raw || compendio;
+  const [c, setC] = useState(base);
+  const [loading, setLoading] = useState(!base.text && !!base.detail_url);
   const [copied, setCopied] = useState(false);
   const [saved, setSaved] = useState(false);
+
+  useEffect(() => {
+    let alive = true;
+    if (!base.text && base.detail_url) {
+      setLoading(true);
+      loadCompendioDetail(base).then(full => {
+        if (alive) { setC(full); setLoading(false); }
+      });
+    } else {
+      setC(base);
+      setLoading(false);
+    }
+    return () => { alive = false; };
+  }, [base.id]);
 
   const citation =
     `${c.title}, ${c.publisher}${c.serie ? ' (' + c.serie + ')' : ''}${c.year && c.year !== '—' ? ', ' + c.year : ''}. Disponible en: ${c.source_url}`;
@@ -78,7 +95,14 @@ export default function CompendioDetail({ compendio, onBack }) {
           </button>
         </div>
 
-        {c.text_pending && (
+        {loading && (
+          <div className="mt-5 flex items-center gap-2 text-sm text-slate-500">
+            <Loader2 size={16} className="animate-spin" />
+            Cargando texto íntegro del compendio…
+          </div>
+        )}
+
+        {!loading && c.text_pending && (
           <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
             <div className="font-semibold mb-1 flex items-center gap-1.5"><FileText size={14} /> Texto íntegro pendiente</div>
             <p>
@@ -89,7 +113,7 @@ export default function CompendioDetail({ compendio, onBack }) {
           </div>
         )}
 
-        {!c.text_pending && c.text && (
+        {!loading && !c.text_pending && c.text && (
           <article className="article-prose mt-5 text-slate-800 whitespace-pre-wrap text-[14px] leading-relaxed">
             {c.text}
           </article>

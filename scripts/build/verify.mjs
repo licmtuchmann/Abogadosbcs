@@ -50,8 +50,12 @@ if (comp) {
     errors += Math.min(bad.length, 1);
   }
   const pending = (comp.items || []).filter(c => c.text_pending);
-  const full = (comp.items || []).filter(c => !c.text_pending && c.text);
-  console.log(`COMPENDIOS: ${comp.items?.length || 0} ítems totales (${full.length} con texto · ${pending.length} pendientes de ingesta · ${(comp.items || []).filter(c => c.source_url).length} con fuente)`);
+  // With lazy-load, full text may live either inline (small items) or
+  // in a separate detail file referenced via detail_url. Both count as
+  // hydrated for integrity purposes.
+  const full = (comp.items || []).filter(c => !c.text_pending && (c.text || c.detail_url));
+  const lazy = (comp.items || []).filter(c => c.detail_url && !c.text).length;
+  console.log(`COMPENDIOS: ${comp.items?.length || 0} ítems totales (${full.length} con texto${lazy ? ` · ${lazy} en archivos lazy` : ''} · ${pending.length} pendientes de ingesta · ${(comp.items || []).filter(c => c.source_url).length} con fuente)`);
 }
 
 if (errors) {

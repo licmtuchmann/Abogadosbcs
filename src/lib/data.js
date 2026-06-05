@@ -45,7 +45,31 @@ export async function loadDataset() {
       metadata: compendios.metadata || {},
       items: verifiedCompendios,
       dropped: (compendios.items?.length || 0) - verifiedCompendios.length,
+      lazy: !!compendios.metadata?.lazy_load,
     },
     manifest,
   };
+}
+
+// Lazy-load the full text of a single compendio. Called by CompendioDetail
+// only when the user opens that compendio's detail view. Result is cached by
+// the browser HTTP cache + workbox StaleWhileRevalidate, so re-opening is
+// instantaneous.
+const compendioCache = new Map();
+export async function loadCompendioDetail(item) {
+  if (!item) return null;
+  if (item.text) return item; // already has full text inline (small item)
+  const cacheKey = item.id;
+  if (compendioCache.has(cacheKey)) return compendioCache.get(cacheKey);
+  if (!item.detail_url) return item; // nothing to fetch
+  try {
+    const r = await fetch(base + item.detail_url, { cache: 'default' });
+    if (!r.ok) throw new Error(`${item.detail_url} → HTTP ${r.status}`);
+    const full = await r.json();
+    compendioCache.set(cacheKey, full);
+    return full;
+  } catch (e) {
+    console.warn(`No se pudo cargar el detalle de ${item.id}:`, e.message);
+    return item;
+  }
 }
