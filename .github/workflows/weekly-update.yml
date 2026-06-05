@@ -1,5 +1,6 @@
 name: Weekly data update (CNPP + SJF + CIDH)
 
+# Cron: viernes 12:00 UTC = 06:00 CDMX. Re-indexing nudge 2026-06-05.
 on:
   schedule:
     # Viernes 12:00 UTC = 06:00 CDMX (CST). Si DST cambia, ajustar.
