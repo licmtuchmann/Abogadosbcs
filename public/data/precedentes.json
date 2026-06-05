@@ -1,0 +1,888 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "last_updated": "2026-05-28",
+    "sources": [
+      {
+        "id": "sjf",
+        "label": "Semanario Judicial de la Federación (SCJN)",
+        "url": "https://sjf2.scjn.gob.mx/"
+      },
+      {
+        "id": "scjn",
+        "label": "SCJN — Sentencias y Precedentes obligatorios",
+        "url": "https://www.scjn.gob.mx/"
+      },
+      {
+        "id": "cidh",
+        "label": "Corte Interamericana de Derechos Humanos",
+        "url": "https://www.corteidh.or.cr/cf/jurisprudencia2/index.cfm?lang=es"
+      }
+    ],
+    "schema_doc": "Cada item debe tener source_url accesible. Sin source_url, el cargador descarta el item (anti-alucinación). Los items con text_pending=true son referencias verificadas hacia la fuente oficial; el scraper semanal los completa.",
+    "doc_ejecutoria": "Sistema constitucional de precedentes (reforma 11-mar-2021 al art. 94 CPEUM y arts. 222-228 Ley de Amparo): las razones de la ejecutoria son la fuente vinculante; la tesis es solo síntesis. El campo 'ejecutoria' guarda el texto íntegro del fallo originario (cuando esté disponible), su URL canónica en SJF, ponente y tipo de juicio. Sin ese texto las consideraciones que confirman o desvirtúan la tesis quedan invisibles.",
+    "seeded_count": 7,
+    "placeholder_count": 10,
+    "last_listado_run": {
+      "timestamp": "2026-05-28T23:53:17.267Z",
+      "source": "https://sjfsemanal.scjn.gob.mx/listado-resultado-tesis",
+      "source_pdf_local": "listadodeTesis20260528 (publicación viernes 22-may-2026)",
+      "parsed_count": 20,
+      "added": 20,
+      "updated": 0
+    }
+  },
+  "items": [
+    {
+      "id": "sjf:2030335",
+      "registro": "2030335",
+      "numero": "1a. XVIII/2025 (11a.)",
+      "rubro": "DEFENSA TÉCNICA ADECUADA EN EL PROCESO PENAL ACUSATORIO. ANTE LA OMISIÓN DE VERIFICAR EN LA AUDIENCIA DE JUICIO LA CALIDAD DE LICENCIADO EN DERECHO DEL DEFENSOR, SE DEBE VERIFICAR EN EL AMPARO DIRECTO Y SÓLO DEVOLVER EL ASUNTO CUANDO NO SE CUENTE CON ELEMENTOS SUFICIENTES PARA ADVERTIRLA [INTERPRETACIÓN DE LA JURISPRUDENCIA 1a./J. 19/2021 (10a.)].",
+      "texto": "Hechos: Una persona promovió amparo directo contra la sentencia de alzada que confirmó su condena penal. El Tribunal Colegiado de Circuito concedió el amparo al advertir que se violó su derecho a la defensa adecuada, pues en la audiencia de juicio no se verificó si su defensor contaba con la calidad de licenciado en derecho. Ordenó que se revocara el acto reclamado para que ello se verificara conforme a la jurisprudencia 1a./J. 62/2020 (10a.).\n\nCriterio jurídico: La Primera Sala de la Suprema Corte de Justicia de la Nación, a partir de una interpretación extensiva de la jurisprudencia 1a./J. 19/2021 (10a.), establece que aun tratándose de amparo directo, los Tribunales Colegiados de Circuito deben analizar si cuentan con elementos para determinar si se vulneró el derecho de defensa del imputado ante la falta de verificación en la audiencia de juicio de la calidad de licenciado en derecho de su defensor, y sólo de no contar con ellos —manifestando tal situación y las razones del impedimento— devolverán el asunto al órgano de conocimiento para que realice esa verificación y, según sea el resultado, continuar con el trámite o reponer el procedimiento.\n\nJustificación: Con ese proceder se busca evitar una interrupción de la consecución ideal de los procedimientos en perjuicio del propio imputado, del principio de continuidad y del derecho a una justicia pronta y expedita, máxime si las autoridades competentes cuentan con los registros necesarios para llevar a cabo dicho ejercicio de verificación.",
+      "precedente": "Amparo directo en revisión 6195/2023. 7 de agosto de 2024. Mayoría de tres votos de los Ministros y la Ministra Ana Margarita Ríos Farjat, Alfredo Gutiérrez Ortiz Mena y Jorge Mario Pardo Rebolledo. Disidente: Juan Luis González Alcántara Carrancá, quien formuló voto particular. Ausente: Loretta Ortiz Ahlf. Ponente: Jorge Mario Pardo Rebolledo. Secretario: Alejandro Castañón Ramírez.",
+      "organo": "Primera Sala",
+      "tipo": "Tesis aislada",
+      "epoca": "Undécima Época",
+      "fecha": "2025-05-09",
+      "materias": [
+        "Constitucional",
+        "Penal"
+      ],
+      "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 49, Mayo de 2025, Tomo I, Volumen 1, página 669",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030335",
+      "ejecutoria": {
+        "source_url": "https://sjf2.scjn.gob.mx/detalle/ejecutoria/29880",
+        "registro": "29880",
+        "expediente": "Contradicción de tesis 187/2020",
+        "tipo_juicio": "Contradicción de tesis entre tribunales colegiados",
+        "fecha_resolucion": "2021-02-24",
+        "ponente": "Jorge Mario Pardo Rebolledo",
+        "secretario": "Carlos Manuel Baráibar Tovar",
+        "votacion": "Mayoría de tres votos. Disidentes: Norma Lucía Piña Hernández y Juan Luis González Alcántara Carrancá",
+        "text": "CONTRADICCIÓN DE TESIS 187/2020 — Primera Sala, Undécima Época, registro 29880. Ponente: Jorge Mario Pardo Rebolledo. Secretario: Carlos Manuel Baráibar Tovar. Resuelta el 24 de febrero de 2021. Mayoría de tres votos. Disidentes: Norma Lucía Piña Hernández y Juan Luis González Alcántara Carrancá.\n\n[EXTRACTO DE CONSIDERANDOS — ESTUDIO DE FONDO]\n\nEsta obligación fue detallada al resolver la contradicción de tesis 405/2017, en la que se generó un análisis sistemático de las disposiciones del Código Nacional de Procedimientos Penales, que regulan tanto las obligaciones de los juzgadores como de los defensores para garantizar el derecho de una defensa adecuada.\n\nEn específico, se realizó un análisis de los artículos 17 y 133 del Código Nacional de Procedimientos Penales, que reconocen expresamente el derecho fundamental de los quejosos a ser defendidos por licenciado en derecho con cédula profesional, esto en concatenación con los artículos 117 y 121 del mismo ordenamiento, que señalan la importancia de la actuación de los defensores para asegurar el debido proceso y, por tanto, la obligación de los juzgadores de certificar que el defensor esté presente en todas las audiencias.\n\nSe dio cuenta también con los artículos 54 y 116 del Código Nacional de Procedimientos Penales, con el propósito de recordar que la calidad de defensor se debe acreditar directamente ante el órgano jurisdiccional desde el inicio del procedimiento, y que previo a cualquier audiencia se hará una individualización de los participantes, haciendo énfasis en el registro de las cédulas de los defensores que asisten a las partes.\n\nPor esa razón es patente la obligación del defensor del imputado acreditar su calidad de licenciado en derecho, lo cual se logra con la exhibición de su cédula profesional expedida por la autoridad legalmente competente, al comienzo de la audiencia inicial. El procedimiento para el registro de la cédula profesional puede darse de dos formas: a) acudiendo al centro de registro de cédulas profesionales correspondiente o, b) ante el asistente de constancias y registros del juzgado de control, quien —al inicio de la audiencia— recabará la información respectiva, lo que dará oportunidad al Juez de Control de corroborar la calidad de licenciado en derecho del defensor. Esta verificación debe constar en la videograbación de la audiencia.\n\nEste mismo tema también fue sujeto de escrutinio por la Primera Sala al resolver la contradicción de tesis 1/2020, pero al tenor de la audiencia de juicio, donde se resaltó que esta obligación de verificación es una regla, para así garantizar el derecho fundamental a una defensa adecuada en su vertiente de ser asistido por un defensor que sea licenciado en derecho.\n\nDe ahí que su inobservancia únicamente implica que no se puede asegurar con total certeza que el derecho fundamental fue respetado, no así que este fue violado, toda vez que independientemente de la verificación de las credenciales, es posible que el abogado defensor sí haya sido licenciado en derecho al momento de su intervención en el proceso.\n\nPor tanto, cuando las autoridades de amparo —o cualquier otra autoridad competente— adviertan que el Juez de Control omitió verificar en audiencia inicial las credenciales del defensor, éstos deben tener en consideración que la violación al derecho de defensa adecuada no está demostrada en el juicio de amparo, sino que únicamente está demostrada una violación a su garantía, y conforme a esa premisa resolver.\n\nComo ha quedado establecido, en la audiencia inicial del procedimiento penal acusatorio, el defensor del imputado debe acreditar su calidad de licenciado en derecho y el Juez de Control debe verificar dicha actuación. Esa obligación constituye una garantía en forma de regla que permite aseverar que el derecho a ser defendido por licenciado en derecho fue respetado en la audiencia inicial.\n\nSi no se cumple, es decir, si el órgano jurisdiccional de control omite verificar las referidas credenciales del defensor en la audiencia inicial, y posteriormente se acarrea el vicio o la irregularidad hasta el recurso de revisión en el juicio de amparo indirecto, el tribunal de amparo se enfrenta a un vicio formal que debe analizar si trasciende o no al fallo.\n\nEn ese contexto, dada la facultad y obligación de los Tribunales Colegiados de Circuito de identificar y actuar frente a un error in procedendo, deberán estudiar si están en posibilidad de resolver la controversia relativa a la omisión del Juez de Control de verificar las credenciales del abogado defensor.\n\nPara tal efecto, deberán ponderar si están en aptitud de verificar que el abogado defensor que participó en la audiencia inicial cumplía en ese momento con la calidad de licenciado en derecho. Lo anterior, tomando en consideración que están constreñidos a realizar dicha ponderación sobre los elementos que se hubiesen rendido ante la autoridad responsable o el órgano jurisdiccional de amparo, de conformidad con el artículo 93, fracción VII, de la Ley de Amparo.\n\nEsto no significa que el órgano de amparo deba realizar en todos los casos ese ejercicio de verificación, y mucho menos decretar la violación al derecho de defensa adecuada sin ningún dato objetivo que haga constar de manera fehaciente que quien asistió al imputado en la audiencia inicial era o no licenciado en derecho, pues afirmar lo contrario implicaría desconocer el carácter revisor que les compete.\n\nBajo el supuesto de que sí estén en posibilidad de generar dicho ejercicio de verificación, se debe partir de la base que el resultado del ejercicio es binario, es decir, la persona que asistió al imputado era o no licenciado en derecho al momento de llevarse a cabo la audiencia inicial.\n\nSi el resultado de la verificación es que el defensor no era licenciado en derecho al momento de la audiencia inicial, el tribunal de amparo deberá resolver sobre este error in procedendo, por tanto, de conformidad con el artículo 77, fracción II, de la Ley de Amparo, deberá conceder el amparo para el efecto de reponer el procedimiento hasta la audiencia inicial, con el propósito de que el imputado goce del derecho de defensa adecuada en la totalidad de la audiencia.\n\nMás a ese respecto, una consecuencia necesaria de la reposición del procedimiento a la luz del sistema penal acusatorio, teniendo como pilares los principios de inmediación y objetividad regulados en el artículo 20, apartado A, fracciones II y IV, de la Constitución Política de los Estados Unidos Mexicanos; el impacto que tendrá en la esfera jurídica del imputado; y el ejercicio valorativo que practicará el Juez de Control en la audiencia inicial, forzosamente la reposición deberá realizarse íntegramente ante un Juez de Control distinto al que conoció en un primer momento.\n\nPor otra parte, si el órgano colegiado se encuentra materialmente imposibilitado para ejecutar la verificación por falta de elementos objetivos, pudiendo ser discos, registros o constancias, pero subsiste esta incertidumbre de si la persona que asistió al imputado en la audiencia inicial fue o no fue licenciado en derecho, se deberá conceder el amparo para el efecto de que las autoridades de amparo (Juez de Distrito o Tribunal Unitario) sean los que llevan a cabo el ejercicio de verificación de credenciales.\n\nSerán estas autoridades las encargadas de verificar y llevar a cabo el mismo procedimiento arriba descrito, bajo la premisa que ellas sí cuentan con los elementos para ejecutar con certidumbre la constatación.\n\nEl envío al Juez de Distrito o en su caso al Tribunal Unitario, responde al principio de continuidad que rige el procedimiento penal en una interacción con el juicio de amparo, toda vez que retrotraer el procedimiento hasta la audiencia inicial, o segunda instancia (cuando se haya optado por esta vía), para la sola verificación, puede traducirse en una interrupción con un costo muy alto al sistema, en perjuicio incluso del propio imputado. Esta medida busca respetar el principio de continuidad y la máxima constitucional de justicia pronta y expedita.\n\n[Texto íntegro disponible en la fuente oficial vinculada.]",
+        "text_pending": false
+      },
+      "articulos_relacionados": [
+        "17",
+        "54",
+        "99",
+        "116",
+        "117",
+        "121",
+        "133",
+        "476"
+      ],
+      "text_pending": false,
+      "verified_by": "manual",
+      "verified_at": "2026-05-28"
+    },
+    {
+      "id": "sjf:2027195",
+      "registro": "2027195",
+      "numero": "1a./J. 9/2021 (11a.)",
+      "rubro": "MEDIO DE DEFENSA INNOMINADO PREVISTO POR EL ARTÍCULO 258 DEL CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES. EL INCULPADO O QUIEN SE OSTENTE COMO TAL, NO ESTÁ OBLIGADO A INTERPONERLO, PREVIAMENTE A PROMOVER JUICIO DE AMPARO.",
+      "texto": "Hechos: Los Tribunales Colegiados de Circuito contendientes sostuvieron criterios distintos al determinar si era necesario que el imputado o quien se ostentara como tal, agotara el medio de defensa ordinario previsto en el artículo 258 del Código Nacional de Procedimientos Penales, previamente a promover el juicio de amparo, ello con el objeto de cumplir con el principio de definitividad, o bien, si sólo resulta exigible su interposición para el ofendido o víctima de algún delito.\n\nCriterio jurídico: La Primera Sala de la Suprema Corte de Justicia de la Nación considera que, atendiendo al espíritu del legislador federal en la creación del recurso innominado a que se refiere el artículo 258 del Código Nacional de Procedimientos Penales, y ante la redacción restrictiva del mismo, en el que sólo se señala a la víctima u ofendido del delito; debe prevalecer como criterio que el inculpado o quien se ostente como tal no está obligado a interponerlo, previamente a promover el juicio de amparo.\n\nJustificación: El artículo 258 del Código Nacional de Procedimientos Penales se conceptualiza como una forma de garantizar el derecho de acceso a la justicia de la víctima u ofendido; por dos razones: primero, porque dicho artículo emerge dentro del nuevo paradigma del sistema acusatorio penal, cuya reforma debe asociarse a la diversa en materia de derechos humanos, publicada en el Diario Oficial de la Federación el diez de junio de dos mil once, con el fin de armonizar un sistema en el cual, entre otras cuestiones, se priorice la protección de los derechos de la víctima u ofendido, asignándole un papel preponderante dentro del proceso penal; y, segundo, porque de una interpretación teleológica del artículo en estudio, se advierte que las determinaciones impugnables en términos del referido artículo 258, son aquellas que afectan principalmente a la víctima u ofendido, atendiéndose a su papel activo dentro del proceso. Además, porque conforme al principio de definitividad, se exige a la parte quejosa que previo a la interposición del juicio, agote los recursos contemplados en la ley, mediante los cuales se pueda modificar, revocar o nulificar el acto impugnado, porque de no hacerlo así, se podría declarar su improcedencia, con base en las causales previstas en el artículo 61 de la Ley de Amparo; sin embargo, esa improcedencia debe ser manifiesta e indudable, esto es, el juzgador no debe acudir a mayor interpretación, sino que se debe advertir claramente de la ley o del análisis de las constancias que se estimen conducentes. En ese contexto, si en el artículo multicitado se precisa en forma clara que la interposición del recurso innominado a que se refiere, únicamente corresponde interponerlo a la víctima u ofendido, no ha lugar a hacer mayor interpretación, porque ése fue el espíritu del legislador y de otra forma no se estaría dando cumplimiento a lo señalado en el artículo 113 de la Ley de Amparo, porque la causa de improcedencia no sería notoria ni manifiesta.",
+      "precedente": "Contradicción de tesis 177/2020. Entre las sustentadas por el Primer Tribunal Colegiado en Materia Penal del Tercer Circuito y el Pleno en Materia Penal del Primer Circuito. 23 de junio de 2021. Mayoría de tres votos de la Ministra Ana Margarita Ríos Farjat, y los Ministros Jorge Mario Pardo Rebolledo y Alfredo Gutiérrez Ortiz Mena. Disidentes: Norma Lucía Piña Hernández y Juan Luis González Alcántara Carrancá. Ponente: Jorge Mario Pardo Rebolledo. Secretaria: Alexandra Valois Salazar.",
+      "organo": "Primera Sala",
+      "tipo": "Jurisprudencia",
+      "epoca": "Undécima Época",
+      "fecha": "2023-09-08",
+      "materias": [
+        "Penal",
+        "Común"
+      ],
+      "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 29, Septiembre de 2023, Tomo II, página 2216",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2027195",
+      "ejecutoria": {
+        "source_url": "https://sjf2.scjn.gob.mx/detalle/ejecutoria/30077",
+        "registro": "30077",
+        "expediente": "Contradicción de tesis 177/2020",
+        "tipo_juicio": "Contradicción de tesis",
+        "fecha_resolucion": "2021-06-23",
+        "ponente": "Jorge Mario Pardo Rebolledo",
+        "secretaria": "Alexandra Valois Salazar",
+        "votacion": "Mayoría de tres votos",
+        "text_pending": true,
+        "note": "Ejecutoria publicada en Gaceta del SJF, Libro 5, Septiembre de 2021, Tomo II, página 1785. Consulte el texto íntegro en la fuente oficial."
+      },
+      "articulos_relacionados": [
+        "109",
+        "211",
+        "213",
+        "216",
+        "253",
+        "254",
+        "255",
+        "256",
+        "258"
+      ],
+      "text_pending": false,
+      "verified_by": "manual",
+      "verified_at": "2026-05-28"
+    },
+    {
+      "id": "sjf:2025607",
+      "registro": "2025607",
+      "numero": "1a./J. 146/2022 (11a.)",
+      "rubro": "PRÓRROGA PARA LA INVESTIGACIÓN COMPLEMENTARIA EN EL PROCESO PENAL ACUSATORIO. NO PUEDE OTORGARSE UNA VEZ QUE SE HAN ALCANZADO LOS LÍMITES MÁXIMOS QUE PARA ESE EFECTO ESTABLECE EL ARTÍCULO 321 DEL CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES.",
+      "texto": "Hechos: Los tribunales contendientes llegaron a conclusiones opuestas sobre la procedencia de otorgar o no la prórroga en la etapa de investigación complementaria dentro del proceso penal acusatorio, cuando en el caso ya se llegó al límite máximo que prevé el artículo 321 del Código Nacional de Procedimientos Penales: dos meses si se trata de delitos cuya pena máxima no exceda los dos años de prisión y seis meses si la pena máxima excediera ese tiempo.\n\nCriterio jurídico: Si en un proceso penal acusatorio, el imputado o su defensa solicitan una prórroga de la etapa de investigación complementaria, ésta es improcedente otorgarla una vez que se hayan alcanzado los límites máximos que el artículo 321 del Código Nacional de Procedimientos Penales prevé para su duración.\n\nJustificación: El cierre de investigación complementaria no supone la pérdida de la oportunidad para que la defensa ofrezca datos de prueba ni para que combata los que obran en la fase de investigación inicial, pues la audiencia intermedia tiene, precisamente, como objeto, el ofrecimiento y admisión de los medios de prueba, así como la depuración de los hechos controvertidos que serán materia del juicio oral, según lo dispone el artículo 334 del Código Nacional de Procedimientos Penales. Además, los imputados tienen derecho al descubrimiento probatorio, en términos del artículo 337 para la celebración de la audiencia intermedia, en la cual la defensa ofrecerá sus medios de prueba y podrá combatir aquellos del Ministerio Público y la víctima como coadyuvante, misma que concluirá con la decisión del Juez de Control sobre los medios de prueba que se ventilarán en juicio oral. Lo anterior, conforme al artículo 20, apartado B, fracciones IV y VII, de la Constitución, porque precisamente las fases siguientes a la investigación complementaria permitirán que la defensa ofrezca datos de prueba y combata los que se hayan aportado por el órgano acusador y su coadyuvante.",
+      "precedente": "Contradicción de tesis 230/2021. Entre las sustentadas por el Segundo Tribunal Colegiado del Trigésimo Circuito y el Primer Tribunal Colegiado en Materia Penal del Primer Circuito. 10 de agosto de 2022. Mayoría de tres votos de los Ministros Juan Luis González Alcántara Carrancá y Alfredo Gutiérrez Ortiz Mena y la Ministra Ana Margarita Ríos Farjat. Disidente: Ministro Jorge Mario Pardo Rebolledo. Ausente: Ministra Norma Lucía Piña Hernández. Ponente: Ministro Alfredo Gutiérrez Ortiz Mena. Secretario: José Alberto Mosqueda Velázquez.",
+      "organo": "Primera Sala",
+      "tipo": "Jurisprudencia",
+      "epoca": "Undécima Época",
+      "fecha": "2022-12-02",
+      "materias": [
+        "Penal"
+      ],
+      "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 20, Diciembre de 2022, Tomo I, página 1224",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2025607",
+      "ejecutoria": {
+        "source_url": "https://sjf2.scjn.gob.mx/detalle/ejecutoria/31296",
+        "registro": "31296",
+        "expediente": "Contradicción de tesis 230/2021",
+        "tipo_juicio": "Contradicción de tesis",
+        "fecha_resolucion": "2022-08-10",
+        "ponente": "Alfredo Gutiérrez Ortiz Mena",
+        "secretario": "José Alberto Mosqueda Velázquez",
+        "votacion": "Mayoría de tres votos. Disidente: Jorge Mario Pardo Rebolledo",
+        "text_pending": true,
+        "note": "Ejecutoria publicada en Gaceta del SJF, Libro 22, Febrero de 2023, Tomo II, página 2349. Consulte el texto íntegro en la fuente oficial."
+      },
+      "articulos_relacionados": [
+        "211",
+        "321",
+        "322",
+        "323",
+        "324",
+        "334",
+        "337"
+      ],
+      "text_pending": false,
+      "verified_by": "manual",
+      "verified_at": "2026-05-28"
+    },
+    {
+      "id": "sjf:2024650",
+      "registro": "2024650",
+      "numero": "1a. XIII/2022 (11a.)",
+      "rubro": "DERECHO A LA DEFENSA DE LOS DERECHOS HUMANOS. CONSTITUYE UN DERECHO HUMANO AUTÓNOMO RECONOCIDO POR EL PARÁMETRO DE CONTROL DE REGULARIDAD CONSTITUCIONAL.",
+      "texto": "Hechos: Una asociación civil promovió juicio de amparo indirecto en contra del Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal de Telecomunicaciones y Radiodifusión, publicado en el Diario Oficial de la Federación el treinta y uno de octubre de dos mil diecisiete, al estimar que se vulneraba en su perjuicio el derecho humano a defender los derechos humanos, en particular, los derechos de las audiencias.\n\nCriterio jurídico: La Primera Sala de la Suprema Corte de Justicia de la Nación reconoce que, como parte de los mecanismos para consolidar los postulados de la democracia, es fundamental la protección y garantía del derecho de las personas, individual o colectivamente, a \"defender los derechos humanos\", que consiste en llevar a cabo cualquier labor o acción tendente al reconocimiento de los derechos humanos en su conjunto o de algunos de éstos, ya sean los derechos civiles, políticos, sociales, económicos o culturales.\n\nJustificación: Lo anterior encuentra su fundamento, en primer lugar, en la Asamblea General de las Naciones Unidas, quien mediante la resolución 53/144 aprobó la \"Declaración sobre el derecho y el deber de los individuos, los grupos y las instituciones de promover y proteger los derechos humanos y las libertades fundamentales universalmente reconocidos\", en la que se reconoció que toda persona tiene derecho, individual o colectivamente, a promover y procurar la protección y realización de los derechos humanos y las libertades fundamentales en los planos nacional e internacional. En segundo lugar, en la Asamblea General de la Organización de los Estados Americanos quien, mediante la Resolución 1671, exhortó a los Estados Miembros —incluido el Estado Mexicano— a continuar con sus esfuerzos tendientes a otorgarles las garantías y facilidades necesarias a fin de seguir ejerciendo libremente sus tareas de promoción y protección de los derechos humanos. En tercer lugar, en el caso \"Defensor de Derechos Humanos y otros Vs. Guatemala\", en el que la Corte Interamericana de Derechos Humanos resolvió que lo que permite atribuir a una persona o grupo de personas la condición o la calidad de defensor de derechos humanos radica en la labor que realiza, con independencia de que la persona que lo haga sea un particular o un funcionario público; así como en el caso \"Valle Jaramillo Vs. Colombia\", en el que dispuso que la labor realizada por los defensores y las defensoras de derechos humanos es fundamental para el fortalecimiento de la democracia y el Estado de derecho, en tanto que actúan ejerciendo un constante reclamo, monitoreo, visibilización y denuncia de aquellas situaciones en que dicho goce y disfrute no se encuentra garantizado o es, incluso, violentado. En cuarto lugar, en la obligación general del Estado de promover, respetar, proteger y garantizar los derechos humanos, prevista en el párrafo tercero del artículo 1o. de la Constitución General. Y, en quinto lugar, en la eficacia horizontal de los derechos humanos, por virtud de la cual los particulares se encuentran, también, obligados a su promoción, protección, respeto y garantía.",
+      "precedente": "Amparo en revisión 1031/2019. Centro de Litigio Estratégico para la Defensa de los Derechos Humanos, A.C. 19 de enero de 2022. Cinco votos. Ponente: Ministro Juan Luis González Alcántara Carrancá. Secretario: Pablo Francisco Muñoz Díaz.",
+      "organo": "Primera Sala",
+      "tipo": "Tesis aislada",
+      "epoca": "Undécima Época",
+      "fecha": "2022-05-20",
+      "materias": [
+        "Constitucional"
+      ],
+      "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 13, Mayo de 2022, Tomo IV, página 3498",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2024650",
+      "ejecutoria": {
+        "source_url": "https://sjf2.scjn.gob.mx/detalle/ejecutoria/30579",
+        "registro": "30579",
+        "expediente": "Amparo en revisión 1031/2019",
+        "tipo_juicio": "Amparo en revisión",
+        "fecha_resolucion": "2022-01-19",
+        "ponente": "Juan Luis González Alcántara Carrancá",
+        "secretario": "Pablo Francisco Muñoz Díaz",
+        "votacion": "Unanimidad de cinco votos",
+        "text_pending": true,
+        "note": "Ejecutoria publicada en Gaceta del SJF, Libro 13, Mayo de 2022, Tomo III, página 2440. Consulte el texto íntegro en la fuente oficial."
+      },
+      "articulos_relacionados": [],
+      "tags": [
+        "defensa de los derechos humanos",
+        "control de regularidad constitucional",
+        "eficacia horizontal"
+      ],
+      "text_pending": false,
+      "verified_by": "manual",
+      "verified_at": "2026-05-28"
+    },
+    {
+      "id": "sjf:2023906",
+      "registro": "2023906",
+      "numero": "1a./J. 23/2021 (11a.)",
+      "rubro": "JUICIO DE AMPARO INDIRECTO DERIVADO DE UN PROCESO PENAL ACUSATORIO. POR REGLA GENERAL ES IMPROCEDENTE, EN CONTRA DE LA EXCLUSIÓN DE MEDIOS DE PRUEBA EN LA ETAPA INTERMEDIA DEL PROCESO PENAL ACUSATORIO.",
+      "texto": "Hechos: Los Tribunales Colegiados de Circuito que participaron en la contradicción de tesis, en ejercicio de sus arbitrios judiciales realizaron un análisis interpretativo que los llevó a conclusiones distintas al resolver si la exclusión de medios de prueba en la etapa intermedia —su no admisión en el auto de apertura a juicio— constituye un \"acto de imposible reparación\" y, por tanto, si es o no procedente el juicio de amparo indirecto en su contra.\n\nCriterio jurídico: La Primera Sala de la Suprema Corte de Justicia de la Nación determina que, por regla general, debe tenerse por actualizada la causal de improcedencia prevista por el artículo 61, fracción XXIII, en relación con el 107, fracción V, ambos de la Ley de Amparo, cuando se impugne la exclusión de medios de prueba. Al ser una regla general, no es absoluta, por lo que para que sea procedente, por excepción será necesario que afecte materialmente derechos sustantivos.\n\nJustificación: Se arriba a esta conclusión de conformidad con el parámetro legal regulado en el artículo 107, fracción V, de la Ley de Amparo, referente a que el juicio de amparo indirecto es procedente en contra de \"actos de imposible reparación\", entendiéndose por éstos aquellos que afecten materialmente derechos sustantivos. Para verificar la actualización del parámetro legal en tratándose de la exclusión probatoria, debe partirse de la relación paralela existente entre el proceso penal y el juicio de amparo indirecto. Si bien ambos juicios guardan puntos de toque inexorables, a su vez cada uno corre por cuerda separada y se actualiza a partir de hechos y finalidades generadas en distintos planos. En ese contexto debe ser entendido el acto que excluye pruebas y el auto de apertura a juicio que no las incluye. Éste es un acto de índole adjetiva —intraprocesal— que sirve como herramienta para formar el plexo probatorio que será discutido y valorado en el juicio oral (mediante la exclusión o no inclusión de algunos medios de prueba). Herramienta que está ya protegida de manera sustancial por la normativa procesal y orgánica, y que de ser detenido por la procedencia del amparo indirecto trastocaría de manera desnaturalizante los principios del proceso penal de corte acusatorio que llaman al equilibrio entre la protección de los derechos fundamentales y la eficacia en la resolución de los procesos. Además, debe tomarse en consideración que cualquier ilegalidad relacionada con la exclusión del medio de prueba puede enmendarse con posterioridad, bien porque existe otro medio que prueba el mismo hecho, porque no era relevante para la teoría del caso, o bien porque se obtenga una sentencia favorable a la parte quejosa pudiendo ser éste el caso si el Juez o tribunal de juicio oral considera que no se cumple con el estándar de prueba requerido debido a la deficiencia del cúmulo probatorio (generada por la exclusión de medios de prueba). En esa tesitura, el amparo, por regla general, es improcedente. Por tanto, una posible violación a los principios informadores de la prueba en la exclusión de los medios de prueba, como pueden ser los principios que deben regir las audiencias (verbigracia, los principios de contradicción, inmediación, oralidad, igualdad de armas), el principio de necesidad de la prueba, el principio dispositivo, el principio de libertad de la prueba, el de pertenencia, o los de idoneidad y utilidad —por nombrar algunos—, haría improcedente el juicio de amparo indirecto a la luz de la doctrina de \"actos de imposible reparación\". Lo anterior, pues efectivamente dichas violaciones residen en un plano adjetivo, cuya afectación está supeditada a su trascendencia en el proceso penal. Sin embargo, existen supuestos excepcionales en los que, estudiados caso por caso, la exclusión de medios de prueba constituye un \"acto de imposible reparación\", pues puede implicar cargas injustificadas al imputado, de ejecución inmediata, que trastoquen derechos sustantivos. Escenario en el que el amparo sí debe ser procedente.",
+      "precedente": "Contradicción de tesis 6/2021. Entre las sustentadas por el Tribunal Colegiado en Materia Penal del Décimo Circuito, el Tribunal Colegiado en Materia Penal del Décimo Primer Circuito, el Tercer Tribunal Colegiado del Vigésimo Séptimo Circuito y el Quinto Tribunal Colegiado en Materia Penal del Primer Circuito. 8 de septiembre de 2021. Mayoría de tres votos. Disidente: Norma Lucía Piña Hernández. Ausente y ponente: Jorge Mario Pardo Rebolledo, en su ausencia hizo suyo el asunto Norma Lucía Piña Hernández. Secretario: Carlos Manuel Baráibar Tovar.",
+      "organo": "Primera Sala",
+      "tipo": "Jurisprudencia",
+      "epoca": "Undécima Época",
+      "fecha": "2021-12-03",
+      "materias": [
+        "Penal"
+      ],
+      "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 8, Diciembre de 2021, Tomo II, página 1319",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2023906",
+      "ejecutoria": {
+        "source_url": "https://sjf2.scjn.gob.mx/detalle/ejecutoria/30258",
+        "registro": "30258",
+        "expediente": "Contradicción de tesis 6/2021",
+        "tipo_juicio": "Contradicción de tesis",
+        "fecha_resolucion": "2021-09-08",
+        "ponente": "Jorge Mario Pardo Rebolledo (asunto retomado por Norma Lucía Piña Hernández)",
+        "secretario": "Carlos Manuel Baráibar Tovar",
+        "votacion": "Mayoría de tres votos. Disidente: Norma Lucía Piña Hernández",
+        "text_pending": true,
+        "note": "Ejecutoria publicada en Gaceta del SJF, Libro 8, Diciembre de 2021, Tomo II, página 1286. Consulte el texto íntegro en la fuente oficial."
+      },
+      "articulos_relacionados": [
+        "211",
+        "334",
+        "337",
+        "346",
+        "348",
+        "359",
+        "467",
+        "472"
+      ],
+      "text_pending": false,
+      "verified_by": "manual",
+      "verified_at": "2026-05-28"
+    },
+    {
+      "id": "sjf:2022096",
+      "registro": "2022096",
+      "numero": "1a./J. 37/2020 (10a.)",
+      "rubro": "AMPARO INDIRECTO. LA JURISPRUDENCIA 2a./J. 9/2018 (10a.) EMITIDA POR LA SEGUNDA SALA DE LA SUPREMA CORTE DE JUSTICIA DE LA NACIÓN, NO ES APLICABLE PARA DETERMINAR SI LOS DÍAS NO LABORADOS POR LA AUTORIDAD RESPONSABLE DEBEN DESCONTARSE DEL CÓMPUTO DEL PLAZO PREVISTO PARA LA PRESENTACIÓN DE LA DEMANDA, CUANDO SE RECLAME ALGUNA DE LAS RESOLUCIONES DICTADAS EN LA AUDIENCIA INICIAL DEL PROCEDIMIENTO PENAL ACUSATORIO Y ORAL.",
+      "texto": "Hechos: Los Tribunales Colegiados contendientes que conocieron de diversos recursos de queja, sostuvieron un criterio distinto con relación a si la jurisprudencia 2a./J. 9/2018 (10a.), de título y subtítulo: \"DEMANDA DE AMPARO INDIRECTO. LOS DÍAS NO LABORADOS POR LA AUTORIDAD RESPONSABLE DEBEN DESCONTARSE DEL CÓMPUTO DEL PLAZO PREVISTO PARA SU PRESENTACIÓN CUANDO EL ACTO RECLAMADO DERIVE DE UN PROCEDIMIENTO JURISDICCIONAL O ADMINISTRATIVO LLEVADO EN FORMA DE JUICIO.\", es aplicable para determinar si deben descontarse del cómputo del plazo para la promoción del juicio de amparo indirecto los días en que no laboró la autoridad responsable, cuando se reclaman el control de la detención y el auto de vinculación a proceso.\n\nCriterio jurídico: Esta Primera Sala de la Suprema Corte de Justicia de la Nación considera que la jurisprudencia de que se trata, no es aplicable.\n\nJustificación: Se afirma lo anterior, porque dicho criterio jurisprudencial emanó del análisis de resoluciones que tuvieron su origen en procedimientos jurisdiccionales o tramitados en forma de juicio, cuya característica principal es que corresponden a un sistema escrito; en ese sentido, se advierte que para su aplicación, tratándose de asuntos derivados de un procedimiento penal cuya gestión obedece a un sistema acusatorio y oral, existe un elemento fáctico ausente en el precedente, que constituye un elemento diferenciador relevante, que por certeza jurídica justifica otorgar un trato diverso, puesto que la distinción conlleva necesariamente a la creación de una nueva regla aplicable a esos hechos y, por ello, resulta inaplicable en sus términos la jurisprudencia de que se trata.\n\nNOTA: De la misma Contradicción de tesis 506/2019 (registro 29492) derivó una jurisprudencia paralela: \"DEMANDA DE AMPARO INDIRECTO. LOS DÍAS NO LABORADOS POR LA AUTORIDAD RESPONSABLE DEBEN DESCONTARSE DEL CÓMPUTO DEL PLAZO PREVISTO PARA SU PRESENTACIÓN CUANDO SE RECLAME ALGUNA DE LAS RESOLUCIONES DICTADAS EN LA AUDIENCIA INICIAL DEL PROCEDIMIENTO PENAL ACUSATORIO Y ORAL.\" — Criterio jurídico: atendiendo a los derechos de acceso a la justicia y al debido proceso, a la naturaleza del proceso penal acusatorio y oral, así como a los instrumentos a través de los cuales deben desahogarse las actuaciones judiciales que conforman sus etapas procesales, considera que cuando el acto reclamado es una resolución dictada en la audiencia inicial como la calificación de la detención o vinculación a proceso, los días no laborables para la autoridad responsable de que se trata deben descontarse del cómputo del plazo que el impetrante tiene para presentar la demanda de amparo indirecto.",
+      "precedente": "Contradicción de tesis 506/2019. Entre las sustentadas por el Tribunal Colegiado en Materia Penal del Décimo Circuito y el Primer Tribunal Colegiado en Materia Penal del Primer Circuito. 24 de junio de 2020. Mayoría de cuatro votos de los Ministros Norma Lucía Piña Hernández, Ana Margarita Ríos Farjat, Jorge Mario Pardo Rebolledo y Juan Luis González Alcántara Carrancá. Disidente: Alfredo Gutiérrez Ortiz Mena. Ponente: Juan Luis González Alcántara Carrancá. Secretario: Horacio Vite Torres.",
+      "organo": "Primera Sala",
+      "tipo": "Jurisprudencia",
+      "epoca": "Décima Época",
+      "fecha": "2020-09-11",
+      "materias": [
+        "Penal",
+        "Común"
+      ],
+      "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 78, Septiembre de 2020, Tomo I, página 136",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2022096",
+      "ejecutoria": {
+        "source_url": "https://sjf2.scjn.gob.mx/detalle/ejecutoria/29492",
+        "registro": "29492",
+        "expediente": "Contradicción de tesis 506/2019",
+        "tipo_juicio": "Contradicción de tesis",
+        "fecha_resolucion": "2020-06-24",
+        "ponente": "Juan Luis González Alcántara Carrancá",
+        "secretario": "Horacio Vite Torres",
+        "votacion": "Mayoría de cuatro votos. Disidente: Alfredo Gutiérrez Ortiz Mena",
+        "text_pending": true,
+        "note": "Ejecutoria publicada en Gaceta del SJF, Libro 78, Septiembre de 2020, Tomo I, página 93. De la misma contradicción derivó la jurisprudencia complementaria sobre el descuento de los días no laborables cuando el acto reclamado es una resolución dictada en audiencia inicial del procedimiento penal acusatorio y oral."
+      },
+      "articulos_relacionados": [
+        "67",
+        "82",
+        "218",
+        "307",
+        "308"
+      ],
+      "text_pending": false,
+      "verified_by": "manual",
+      "verified_at": "2026-05-28"
+    },
+    {
+      "id": "sjf:2020891",
+      "registro": "2020891",
+      "numero": "1a./J. 72/2019 (10a.)",
+      "rubro": "DEFENSA ADECUADA EN LA ETAPA DE INVESTIGACIÓN INICIAL DEL PROCEDIMIENTO PENAL ACUSATORIO. EL INDICIADO Y SU DEFENSOR TIENEN DERECHO A OBTENER COPIAS O REPRODUCCIONES FOTOGRÁFICAS DE LOS DATOS DE PRUEBA QUE OBRAN EN LA CARPETA DE INVESTIGACIÓN, CUANDO EL IMPUTADO SE UBICA EN ALGUNO DE LOS SUPUESTOS ESTABLECIDOS EN EL ARTÍCULO 218, PÁRRAFO TERCERO, DEL CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES.",
+      "texto": "Una interpretación sistemática de los artículos 113 y 218 del Código Nacional de Procedimientos Penales permite concluir que el imputado y su defensor podrán tener acceso a los registros de la investigación cuando aquél se encuentre detenido, sea citado para comparecer con tal carácter, o bien, sea sujeto de un acto de molestia y se pretenda recibir su entrevista. Sin embargo, para el goce efectivo del derecho fundamental de defensa adecuada, debe permitirse que puedan obtener una reproducción de dichos registros, ya sea en copia fotostática o como registro fotográfico cuando el imputado se ubica en alguno de los supuestos establecidos en el artículo 218, párrafo tercero, del Código aludido lo que es acorde con los principios del sistema procesal penal acusatorio, relativos a la igualdad y equilibrio entre las partes. Sin que obste a lo anterior el hecho de que el artículo 219 del Código aludido establezca que una vez convocados a la audiencia inicial, el imputado y su defensor tendrán derecho a consultar los registros de investigación y a obtener copia con la oportunidad debida para preparar la defensa, pues dicha disposición legal no debe interpretarse como una regla restrictiva ni considerar que sólo a partir de ese momento procesal pueden obtener copias, ya que de la redacción de dicho precepto deriva la obligación del Ministerio Público de respetar el derecho a una defensa adecuada y de igualdad entre las partes, permitiendo el acceso a los registros de investigación y la obtención de copias o reproducciones fotográficas de los datos que obran en la carpeta de investigación, de manera que no prohíbe que éstas se obtengan con anterioridad, pues lo que debe privilegiarse es que llegada la audiencia inicial, quien habrá de ser imputado cuente ya con los datos y registros necesarios que le permitan desarrollar una defensa adecuada, por lo que al actualizarse el supuesto en que el imputado pueda tener acceso a la carpeta de investigación, ello implica también su derecho a obtener copia de su contenido.",
+      "precedente": "Contradicción de tesis 149/2019. Entre las sustentadas por el Pleno en Materia Penal del Primer Circuito y el Segundo Tribunal Colegiado en Materia Penal del Tercer Circuito. 12 de junio de 2019. Cinco votos de los Ministros Norma Lucía Piña Hernández, Luis María Aguilar Morales, Jorge Mario Pardo Rebolledo, Alfredo Gutiérrez Ortiz Mena y Juan Luis González Alcántara Carrancá. Ponente: Juan Luis González Alcántara Carrancá. Secretario: Horacio Vite Torres.",
+      "organo": "Primera Sala",
+      "tipo": "Jurisprudencia",
+      "epoca": "Décima Época",
+      "fecha": "2019-10-25",
+      "materias": [
+        "Penal"
+      ],
+      "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 71, Octubre de 2019, Tomo I, página 994",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2020891",
+      "ejecutoria": {
+        "source_url": "https://sjf2.scjn.gob.mx/detalle/ejecutoria/29103",
+        "registro": "29103",
+        "expediente": "Contradicción de tesis 149/2019",
+        "tipo_juicio": "Contradicción de tesis",
+        "fecha_resolucion": "2019-06-12",
+        "ponente": "Juan Luis González Alcántara Carrancá",
+        "secretario": "Horacio Vite Torres",
+        "votacion": "Unanimidad de cinco votos",
+        "text": "CONTRADICCIÓN DE TESIS 149/2019 — Primera Sala, Décima Época, registro 29103. Ponente: Juan Luis González Alcántara Carrancá. Secretario: Horacio Vite Torres. Resuelta el 12 de junio de 2019. Cinco votos.\n\n[EXTRACTO DE CONSIDERANDOS — ESTUDIO DE FONDO]\n\nV. Consideraciones y fundamentos. Esta Primera Sala considera que debe prevalecer, con carácter de jurisprudencia, el criterio adicionado con consideraciones de esta Primera Sala, sostenido por el Pleno en Materia Penal del Primer Circuito, que determinó que el imputado tiene derecho a obtener copias fotostáticas de los registros que obran en la carpeta de investigación cuando se encuentre detenido, sea citado para comparecer con tal carácter, o bien, sea sujeto de un acto de molestia y se pretenda recibir su entrevista.\n\nI. El derecho de defensa adecuada. En primer término, el artículo 20, apartado B, fracciones VI y VIII, de la Constitución dispone la obligación irrestricta de facilitar al imputado o a su defensor, todos los datos que solicite para su defensa y que consten en el proceso, y que tendrán acceso a los registros de la investigación cuando el primero se encuentre detenido, cuando pretenda recibírsele declaración o entrevistarlo.\n\nPor otra parte, el Código Nacional de Procedimientos Penales establece, en su artículo 117, fracción IV, que una de las diversas obligaciones del defensor es analizar las constancias que obren en la carpeta de investigación, a fin de contar con mayores elementos para la defensa. Lo anterior implica que el derecho a una defensa adecuada también versa sobre el acceso que el imputado y su defensor deben tener a los datos de la investigación.\n\nA su vez, el código adjetivo aludido, en su artículo 113, fracción VIII, establece que uno de los derechos del imputado es tener acceso, junto con su defensa, a los registros de la investigación, así como a obtener copia gratuita, registro fotográfico o electrónico de los mismos, en términos de los artículos 218 y 219 del cuerpo normativo en cuestión.\n\nII. El sigilo en la investigación inicial. A partir de la promulgación y entrada en vigor del Código Nacional de Procedimientos Penales, los artículos 218 y 219 establecen el momento procesal en el cual los registros ya no podrán mantenerse en reserva para el imputado y su defensor, los cuales son: a) cuando se encuentre detenido; b) cuando sea citado para comparecer como imputado; o, c) sea sujeto de un acto de molestia y se pretenda recibir su entrevista. Es decir, en cualquiera de los supuestos anteriores, el imputado y su defensor deben tener acceso a los datos de la investigación que obran en la carpeta de investigación.\n\nIII. El principio de igualdad procesal. Atendiendo a los principios de igualdad ante la ley y entre las partes (arts. 10 y 11 CNPP), las partes procesales que intervengan en el procedimiento penal recibirán el mismo trato y tendrán las mismas oportunidades para sostener la acusación y la defensa, según sea el caso. En ese tenor, corresponde a las autoridades que intervengan en el procedimiento penal, emprender las acciones y verificar que existan las condiciones necesarias tendentes a garantizar la igualdad de las partes sobre la base de la equidad en el ejercicio de sus derechos previstos en la Constitución Federal, los tratados internacionales y las leyes que de ellos emanen.\n\nIV. El acceso a los datos que obran en la carpeta de investigación y la obtención de copias fotostáticas. Si bien los artículos 113, 218 y 219 del Código Nacional de Procedimientos Penales establecen supuestos con relación al acceso, consulta, así como la obtención de copia de los registros de investigación, lo cierto es que dichos numerales no deben ser interpretados de forma restrictiva o limitativa, sino de manera sistemática.\n\nNo obstante, a la luz del principio pro persona, no puede establecerse que la palabra \"acceso\" limite al imputado o a su defensor, a tener únicamente a la vista los registros de investigación. Dicho concepto es más amplio e implica también poderlos retener a través de una reproducción fotostática o fotográfica.\n\nEn efecto, la palabra acceso significa \"el acercamiento a un fin\"; de tal manera que el acceso a la carpeta de investigación es el acercamiento a los registros de investigación, a fin de que el imputado esté en condiciones de conformar su teoría del caso, con lo cual se garantiza el derecho a una defensa adecuada y en trato procesal igual para las partes.\n\nAsí, la negativa de expedir copias en favor del imputado o su defensor al comparecer ante el Ministerio Público, a juicio de esta Primera Sala, cuando tal calidad le ha sido reconocida por el Ministerio Público, constituye una restricción desproporcionada, que de permitirse generará que el proceso penal deje de estar en equilibrio, dejando al imputado en estado de indefensión.\n\nPor ello, una vez que el investigado ha sido notificado para comparecer como indiciado, se le debe permitir obtener copias de los registros de la investigación, porque de esta manera, las partes tienen una posibilidad efectiva e igual de defender sus puntos de vista y ofrecer datos de pruebas en apoyo a sus pretensiones en esa etapa procesal.\n\nAdemás, al actualizarse cualquiera de los supuestos previstos por los artículos 20, fracción VI, párrafo segundo, de la Constitución Federal y 218, párrafo tercero, del Código Nacional de Procedimientos Penales, los registros de investigación dejan de tener el carácter de reservado para el indiciado o su defensor y, por tanto, no existe motivo para negarle a estos últimos una reproducción de tales constancias. Por tanto, debe entenderse que la palabra \"acceso\" a dichos registros conlleva la posibilidad de que se obtenga copia o se permita el registro fotográfico de los mismos.\n\nA su vez, el artículo 219 del Código Nacional de Procedimientos Penales señala que una vez convocados a la audiencia inicial, el imputado y su defensor tendrán derecho a consultar los registros de investigación y a obtener copia, con la oportunidad debida para preparar la defensa. Sin embargo, no debe interpretarse como una regla restrictiva de que sólo a partir de ese momento procesal puedan obtener copias, ya que de la redacción de dicho precepto se desprende la obligación del Ministerio Público de respetar el derecho a una defensa adecuada e igualdad entre las partes, permitiendo el acceso a los registros de investigación y la obtención de copias o reproducciones fotográficas de los datos que obran en la carpeta de investigación; de manera que no prohíbe que esa copia se obtenga con anterioridad, pues lo que se privilegia es que, llegada la audiencia inicial, quien habrá de ser imputado cuente ya con los datos y registros necesarios que le permitan desarrollar una adecuada defensa.\n\nEste principio (igualdad de armas) consiste en que cada parte del proceso penal debe poder presentar su caso bajo condiciones y garantías judiciales, que permitan equilibrar los medios y posibilidades de actuación procesal; de tal manera que no se genere una posición sustancialmente desventajosa de una de las partes frente a la otra, como la que de hecho se presenta entre el ente acusador (Ministerio Público) y el acusado, a favor del primero en detrimento del segundo.\n\nEn consecuencia, por todas las consideraciones anteriores, esta Primera Sala concluye que el acceso a los registros de la investigación conlleva la posibilidad de que el imputado o su defensor obtengan copias o se les permita el registro fotográfico, lo cual resulta acorde con la normatividad de orden constitucional e internacional, que garantiza el derecho fundamental de defensa adecuada e igualdad procesal en favor del imputado.\n\n[Texto íntegro disponible en la fuente oficial vinculada.]",
+        "text_pending": false
+      },
+      "articulos_relacionados": [
+        "10",
+        "11",
+        "17",
+        "113",
+        "117",
+        "121",
+        "218",
+        "219",
+        "266"
+      ],
+      "text_pending": false,
+      "verified_by": "manual",
+      "verified_at": "2026-05-28"
+    },
+    {
+      "id": "sjf:176546",
+      "registro": "176546",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/176546",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030503",
+      "registro": "2030503",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030503",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030571",
+      "registro": "2030571",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030571",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030591",
+      "registro": "2030591",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030591",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030814",
+      "registro": "2030814",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030814",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2030986",
+      "registro": "2030986",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2030986",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2031026",
+      "registro": "2031026",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2031026",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2031911",
+      "registro": "2031911",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2031911",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2031978",
+      "registro": "2031978",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2031978",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032049",
+      "registro": "2032049",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032049",
+      "fuente": "Semanario Judicial de la Federación",
+      "verified_by": "manual",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032166",
+      "registro": "2032166",
+      "numero": "P./J. 89/2026 (12a.)",
+      "rubro": "INCUMPLIMIENTO DE OBLIGACIONES ALIMENTARIAS. LA RESOLUCIÓN JUDICIAL EN MATERIA FAMILIAR QUE FIJA LA PENSIÓN ALIMENTICIA CONSTITUYE COSA JUZGADA RESPECTO DE LA OBLIGACIÓN Y LA CAPACIDAD ECONÓMICA DEL DEUDOR, POR LO QUE EN LA Judicial de la INSTANCIA PENAL NO SE PUEDEN REVALORAR ESOS Federación y, por ASPECTOS. ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032166",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032167",
+      "registro": "2032167",
+      "numero": "P./J. 90/2026 (12a.)",
+      "rubro": "INCUMPLIMIENTO DE OBLIGACIONES ALIMENTARIAS. SE ACTUALIZA LA MODALIDAD AGRAVADA CON EL INCUMPLIMIENTO PARCIAL O TOTAL DE LA PENSIÓN ALIMENTICIA FIJADA POR RESOLUCIÓN JUDICIAL SIN MOTIVO JUSTIFICADO (ARTÍCULO 201 DEL CÓDIGO Judicial de la PENAL PARA EL ESTADO DE MORELOS). Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032167",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032179",
+      "registro": "2032179",
+      "numero": "P./J. 85/2026 (12a.)",
+      "rubro": "REGISTRO NACIONAL DE VALORES. EL ARTÍCULO 108 DE LA LEY RELATIVA NO VIOLA EL PRINCIPIO DE SEGURIDAD JURÍDICA (LEGISLACIÓN VIGENTE HASTA EL 28 DE DICIEMBRE DE 2023). Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032179",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032147",
+      "registro": "2032147",
+      "numero": "P./J. 94/2026 (12a.)",
+      "rubro": "ACCESOAEMPLEOSOCARGOSPÚ BLICOSE N CONDICIONES DE IGUALDAD. LA RESTRICCIÓN A LAS PERSONAS NOTARIAS PARA SOLICITAR LICENCIA ÚNICAMENTE A CARGOS DE ELECCIÓN POPULAR, VULNERA ESE DERECHO (LEGISLACIÓN DEL ESTADO DE Judicial de la COLIMA). Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.). Pág. 1 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032147",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032148",
+      "registro": "2032148",
+      "numero": "P./J. 82/2026 (12a.)",
+      "rubro": "ACCESO A LA INFORMACIÓN PÚBLICA. LOS COBROS DERIVADOSDELEJERCICIODEESEDERECH O REQUIEREN UNA MOTIVACIÓN REFORZADA DEL LEGISLADOR PARA SER ACORDES CON EL PRINCIPIO DE GRATUIDAD. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032148",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032157",
+      "registro": "2032157",
+      "numero": "P./J. 88/2026 (12a.)",
+      "rubro": "CATEGORÍ ASADMINISTRATIVASMUNICIPALE S . INTERPRETACIÓN DEL ARTÍCULO 18 DE LA LEY ORGÁNICA MUNICIPAL DEL ESTADO DE OAXACA. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032157",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032156",
+      "registro": "2032156",
+      "numero": "P./J. 81/2026 (12a.)",
+      "rubro": "CONTROVERSIA CONSTITUCIONAL. PROCEDE EL SOBRESEIMIENTO CUANDO SÓLO SE IMPUGNA UNA NORMA DE VIGENCIA ANUAL Y HAN CESADO SUS EFECTOS. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032156",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032160",
+      "registro": "2032160",
+      "numero": "P./J. 84/2026 (12a.)",
+      "rubro": "DERECHO DE ACCESO A LA INFORMACIÓN. LAS NORMAS QUE PREVÉN COBROS POR LA DIGITALIZACIÓN DE INFORMACIÓ NENDISPOSITIVOSMAGNÉ TICO S APORTADOS POR EL SOLICITANTE, VIOLAN EL PRINCIPIO DE GRATUIDAD. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.). Pág. 2 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032160",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032161",
+      "registro": "2032161",
+      "numero": "P./J. 91/2026 (12a.)",
+      "rubro": "DERECHOS POR EL USO O APROVECHAMIENTO DE SERVICIO S , BIENESYESPACIOSPÚ BLICO S MUNICIPALES. LA FALTA DE IDENTIFICACIÓN DEL SERVICIO PÚBLICO QUE DA ORIGEN A LA CONTRIBUCIÓN VULNERA LOS PRINCIPIOS DE LEGALIDAD Y SEGURIDAD Judicial de la JURÍDICA. Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032161",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032162",
+      "registro": "2032162",
+      "numero": "P./J. 83/2026 (12a.)",
+      "rubro": "DERECHOS POR SERVICIOS DE EXPEDICIÓN DE COPIAS SIMPLES Y CERTIFICADAS. LA NORMA QUE ESTABLECE UN COBRO MAYOR POR LA CALIDAD DE ESTUDIANTE VIOLA LOS PRINCIPIOS DE PROPORCIONALIDAD Y EQUIDAD TRIBUTARIAS. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032162",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032165",
+      "registro": "2032165",
+      "numero": "P./J. 93/2026 (12a.)",
+      "rubro": "FALTAS ADMINISTRATIVAS MUNICIPALES. LAS NORMAS QUE SANCIONAN PROFERIR INSULTOS, FALTAS DE RESPETO O AGRESIONES VERBALES, VULNERAN LA SEGURIDAD JURÍDICA Y EL PRINCIPIO DE LEGALIDAD EN SU VERTIENTE DE TAXATIVIDAD. Judicial de la Federación. La sentencia de la cual deriva se publicó el diciembre de 2025 a las 10:24 horas y, por ende, las consideraciones que contiene la resolución, aprobadas por 6 votos o más, en términos de lo dispuesto en el artículo 43 de la respectiva Ley Reglamentaria, se consideran de a partir del diciembre de 2025, para los efectos previstos en el punto octavo del Acuerdo General Plenario 7/2025 (12a.). Pág. 3 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032165",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032151",
+      "registro": "2032151",
+      "numero": "P./J. 86/2026 (12a.)",
+      "rubro": "ORGANIZACIÓN ADMINISTRATIVA DE LOS MUNICIPIOS. EL DECRETO NÚMERO 2450 DEL CONGRESO DEL ESTADO DE OAXACA VULNERA EL ARTÍCULO 115, FRACCIÓN II, CONSTITUCIONAL. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032151",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032173",
+      "registro": "2032173",
+      "numero": "P./J. 95/2026 (12a.)",
+      "rubro": "PARLAMENTO ABIERTO. LOS CONGRESOS LOCALES NO TIENENLAOBLIGACIÓ NCONSTITUCIONALD E REALIZARLO PARA EFECTO DE QUE SE RECONOZCA LA VALIDEZ DE SUS PROCESOS LEGISLATIVOS. Judicial de la Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032173",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032176",
+      "registro": "2032176",
+      "numero": "P./J. 92/2026 (12a.)",
+      "rubro": "PROPORCIONALIDAD TRIBUTARIA. LOS COBROS DE DERECHOSPORSERVICIOSDEBÚ SQUEDAD E DOCUMENTOS EN ARCHIVOS U OFICINAS MUNICIPALES VULNERAN ESE PRINCIPIO. Judicial de la Federación. La sentencia de la cual deriva se publicó el diciembre de 2025 a las 10:24 horas y, por ende, las consideraciones que contiene la resolución, aprobadas por 6 votos o más, en términos de lo dispuesto en el artículo 43 de la respectiva Ley Reglamentaria, se consideran de a partir del diciembre de 2025, para los efectos previstos en el punto octavo del Acuerdo General Plenario 7/2025 (12a.). Pág. 4 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación # Registro Tesis Rubro Nota de publicación digital",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032176",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032178",
+      "registro": "2032178",
+      "numero": "P./J. 87/2026 (12a.)",
+      "rubro": "RECONOCIMIENTO DE CATEGORÍAS ADMINISTRATIVAS MUNICIPALES (AGENCIA MUNICIPAL O DE POLICÍA). EL ARTÍCULO 18 DE LA LEY ORGÁNICA MUNICIPAL DEL ESTADO DE OAXACA CONFIGURA UN MECANISMO DE COLABORACIÓN ENTRE EL CONGRESO LOCAL Y LOS Judicial de la AYUNTAMIENTOS PARA SU OTORGAMIENTO. Federación y, por ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032178",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032146",
+      "registro": "2032146",
+      "numero": "P. II/2026 (12a.)",
+      "rubro": "ABORTO FORZADO. LA PORCIÓN \"CON O SIN EL CONOCIMIENTO DE LA VÍCTIMA\" DEL ARTÍCULO 311 BIS, PÁRRAFO PRIMERO, DEL CÓDIGO PENAL PARA EL ESTADO DE ZACATECAS, VIOLA EL PRINCIPIO DE LEGALIDAD, EN SU VERTIENTE DE TAXATIVIDAD. Judicial de la Federación.",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032146",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032158",
+      "registro": "2032158",
+      "numero": "P. V/2026 (12a.)",
+      "rubro": "DELITO CONTRA LA FUNCIÓN NOTARIAL. EL PREVISTO EN EL ARTÍCULO 140 DE LA LEY DEL NOTARIADO DEL ESTADO DE COLIMA VULNERA EL PRINCIPIO DE LEGALIDAD, EN SU VERTIENTE DE TAXATIVIDAD. Judicial de la Federación.",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032158",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032168",
+      "registro": "2032168",
+      "numero": "P. IV/2026 (12a.)",
+      "rubro": "LIBERTAD DE TRABAJO. LA RESTRICCIÓN A LAS PERSONAS NOTARIAS PARA SOLICITAR LICENCIA ÚNICAMENTE A CARGOS DE ELECCIÓN POPULAR, VULNERA ESE DERECHO (LEGISLACIÓN DEL ESTADO DE COLIMA). Judicial de la Federación.",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032168",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032175",
+      "registro": "2032175",
+      "numero": "P. III/2026 (12a.)",
+      "rubro": "PROGRESIVIDAD DE LOS DERECHOS HUMANOS, EN SU VERTIENTE DE NO REGRESIVIDAD. LA RESTRICCIÓN A UN DERECHOPREVIAMENTERECONOCIDOALA S PERSONAS NOTARIAS PARA ACCEDER A CARGOS PÚBLICOS DISTINTOS DE LOS DE ELECCIÓN POPULAR Judicial de la VULNERA ESE PRINCIPIO (LEGISLACIÓN DEL ESTADO DE Federación. COLIMA).",
+      "rubro_partial": false,
+      "organo": "Pleno",
+      "tipo": "Tesis aislada",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032175",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    },
+    {
+      "id": "sjf:2032170",
+      "registro": "2032170",
+      "numero": "PR.A.C.CS. J/4 C (12a.)",
+      "rubro": "MULTA IMPUESTA COMO CORRECTIVO DISCIPLINARIO EN EL JUICIO ORDINARIO MERCANTIL. PREVIO A PROMOVER EL AMPARO INDIRECTO EN SU CONTRA NO ESNECESARIOAGOTARALGÚ NMEDIODEIMPUGNACIÓ NPREVISTOENLALEGISLACIÓ N Judicial de la PROCESAL CIVIL, YA QUE LA LEGISLACIÓN MERCANTIL Federación y, por ESTABLECE SU PROPIO SISTEMA DE RECURSOS. ende, se a partir del mayo de 2026, para los en el Acuerdo General Plenario 7/2025 (12a.). Pág. 5 de 6 Fecha de impresión 28/05/2026 Semanario Judicial de la Federación Pág. 6 de 6 Fecha de impresión 28/05/2026",
+      "rubro_partial": false,
+      "organo": "Plenos Regionales",
+      "tipo": "Jurisprudencia",
+      "epoca": "Duodécima Época",
+      "fecha": "2026-05-22",
+      "fuente": "Semanario Judicial de la Federación",
+      "source_url": "https://sjf2.scjn.gob.mx/detalle/tesis/2032170",
+      "verified_by": "sjf_listado_weekly",
+      "verified_at": "2026-05-28",
+      "text_pending": true,
+      "ejecutoria": {
+        "text_pending": true,
+        "url_pending": true
+      },
+      "articulos_relacionados": []
+    }
+  ]
+}

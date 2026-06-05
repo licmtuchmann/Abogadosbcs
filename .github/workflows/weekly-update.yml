@@ -1,0 +1,73 @@
+name: Weekly data update (CNPP + SJF + CIDH)
+
+on:
+  schedule:
+    # Viernes 12:00 UTC = 06:00 CDMX (CST). Si DST cambia, ajustar.
+    - cron: '0 12 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Install converters
+        run: sudo apt-get update && sudo apt-get install -y catdoc poppler-utils
+
+      - name: Refresh CNPP from Cámara de Diputados
+        run: node scripts/ingest/cnpp.mjs || true
+
+      - name: Ingest weekly SJF listing (descubre tesis nuevas del viernes)
+        run: node scripts/ingest/sjf_listado.mjs || true
+
+      - name: Refresh SJF (SCJN) precedentes — hidrata placeholders
+        run: node scripts/ingest/sjf.mjs || true
+
+      - name: Refresh CIDH precedentes
+        run: node scripts/ingest/cidh.mjs || true
+
+      - name: Hydrate SCJN/UNAM compendios (PDF → texto)
+        run: node scripts/ingest/compendios.mjs || true
+
+      - name: Verify integrity
+        run: npm run verify
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet -- public/data; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create pull request with refreshed data
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: data/weekly-update-${{ github.run_number }}
+          title: "data: actualización semanal del CNPP y precedentes"
+          commit-message: "data: actualización semanal (CNPP + SJF + CIDH)"
+          body: |
+            Actualización automática del dataset.
+
+            - Revisar `public/data/cnpp.json` para reformas detectadas (campo `history`).
+            - Revisar `public/data/precedentes.json` para nuevas tesis/criterios.
+
+            Las entradas sin `source_url` se descartan automáticamente.
+          labels: |
+            data
+            automated

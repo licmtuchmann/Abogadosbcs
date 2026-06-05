@@ -1,0 +1,282 @@
+#!/usr/bin/env node
+// Build script: turns the verified tesis texts (provided by the user from
+// authoritative SJF source) into a clean precedentes.json. Reads body texts
+// from /tmp/seed_tesis/*.txt so JSON escaping is handled automatically by
+// JSON.stringify.
+
+import fs from 'node:fs';
+import path from 'node:path';
+
+const SRC = '/tmp/seed_tesis';
+const OUT = path.resolve('public/data/precedentes.json');
+const VERIFIED_AT = '2026-05-28';
+
+function readTxt(name) {
+  return fs.readFileSync(path.join(SRC, name), 'utf8').trim();
+}
+
+const tesis = [
+  {
+    id: 'sjf:2030335',
+    registro: '2030335',
+    numero: '1a. XVIII/2025 (11a.)',
+    rubro: 'DEFENSA TÉCNICA ADECUADA EN EL PROCESO PENAL ACUSATORIO. ANTE LA OMISIÓN DE VERIFICAR EN LA AUDIENCIA DE JUICIO LA CALIDAD DE LICENCIADO EN DERECHO DEL DEFENSOR, SE DEBE VERIFICAR EN EL AMPARO DIRECTO Y SÓLO DEVOLVER EL ASUNTO CUANDO NO SE CUENTE CON ELEMENTOS SUFICIENTES PARA ADVERTIRLA [INTERPRETACIÓN DE LA JURISPRUDENCIA 1a./J. 19/2021 (10a.)].',
+    texto: readTxt('2030335_texto.txt'),
+    precedente: 'Amparo directo en revisión 6195/2023. 7 de agosto de 2024. Mayoría de tres votos de los Ministros y la Ministra Ana Margarita Ríos Farjat, Alfredo Gutiérrez Ortiz Mena y Jorge Mario Pardo Rebolledo. Disidente: Juan Luis González Alcántara Carrancá, quien formuló voto particular. Ausente: Loretta Ortiz Ahlf. Ponente: Jorge Mario Pardo Rebolledo. Secretario: Alejandro Castañón Ramírez.',
+    organo: 'Primera Sala',
+    tipo: 'Tesis aislada',
+    epoca: 'Undécima Época',
+    fecha: '2025-05-09',
+    materias: ['Constitucional', 'Penal'],
+    fuente: 'Gaceta del Semanario Judicial de la Federación, Libro 49, Mayo de 2025, Tomo I, Volumen 1, página 669',
+    source_url: 'https://sjf2.scjn.gob.mx/detalle/tesis/2030335',
+    ejecutoria: {
+      source_url: 'https://sjf2.scjn.gob.mx/detalle/ejecutoria/29880',
+      registro: '29880',
+      expediente: 'Contradicción de tesis 187/2020',
+      tipo_juicio: 'Contradicción de tesis entre tribunales colegiados',
+      fecha_resolucion: '2021-02-24',
+      ponente: 'Jorge Mario Pardo Rebolledo',
+      secretario: 'Carlos Manuel Baráibar Tovar',
+      votacion: 'Mayoría de tres votos. Disidentes: Norma Lucía Piña Hernández y Juan Luis González Alcántara Carrancá',
+      text: readTxt('2030335_ejec.txt'),
+      text_pending: false,
+    },
+    articulos_relacionados: ['17', '54', '99', '116', '117', '121', '133', '476'],
+    text_pending: false,
+    verified_by: 'manual',
+    verified_at: VERIFIED_AT,
+  },
+
+  {
+    id: 'sjf:2027195',
+    registro: '2027195',
+    numero: '1a./J. 9/2021 (11a.)',
+    rubro: 'MEDIO DE DEFENSA INNOMINADO PREVISTO POR EL ARTÍCULO 258 DEL CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES. EL INCULPADO O QUIEN SE OSTENTE COMO TAL, NO ESTÁ OBLIGADO A INTERPONERLO, PREVIAMENTE A PROMOVER JUICIO DE AMPARO.',
+    texto: readTxt('2027195_texto.txt'),
+    precedente: 'Contradicción de tesis 177/2020. Entre las sustentadas por el Primer Tribunal Colegiado en Materia Penal del Tercer Circuito y el Pleno en Materia Penal del Primer Circuito. 23 de junio de 2021. Mayoría de tres votos de la Ministra Ana Margarita Ríos Farjat, y los Ministros Jorge Mario Pardo Rebolledo y Alfredo Gutiérrez Ortiz Mena. Disidentes: Norma Lucía Piña Hernández y Juan Luis González Alcántara Carrancá. Ponente: Jorge Mario Pardo Rebolledo. Secretaria: Alexandra Valois Salazar.',
+    organo: 'Primera Sala',
+    tipo: 'Jurisprudencia',
+    epoca: 'Undécima Época',
+    fecha: '2023-09-08',
+    materias: ['Penal', 'Común'],
+    fuente: 'Gaceta del Semanario Judicial de la Federación, Libro 29, Septiembre de 2023, Tomo II, página 2216',
+    source_url: 'https://sjf2.scjn.gob.mx/detalle/tesis/2027195',
+    ejecutoria: {
+      source_url: 'https://sjf2.scjn.gob.mx/detalle/ejecutoria/30077',
+      registro: '30077',
+      expediente: 'Contradicción de tesis 177/2020',
+      tipo_juicio: 'Contradicción de tesis',
+      fecha_resolucion: '2021-06-23',
+      ponente: 'Jorge Mario Pardo Rebolledo',
+      secretaria: 'Alexandra Valois Salazar',
+      votacion: 'Mayoría de tres votos',
+      text_pending: true,
+      note: 'Ejecutoria publicada en Gaceta del SJF, Libro 5, Septiembre de 2021, Tomo II, página 1785. Consulte el texto íntegro en la fuente oficial.',
+    },
+    articulos_relacionados: ['109', '211', '213', '216', '253', '254', '255', '256', '258'],
+    text_pending: false,
+    verified_by: 'manual',
+    verified_at: VERIFIED_AT,
+  },
+
+  {
+    id: 'sjf:2025607',
+    registro: '2025607',
+    numero: '1a./J. 146/2022 (11a.)',
+    rubro: 'PRÓRROGA PARA LA INVESTIGACIÓN COMPLEMENTARIA EN EL PROCESO PENAL ACUSATORIO. NO PUEDE OTORGARSE UNA VEZ QUE SE HAN ALCANZADO LOS LÍMITES MÁXIMOS QUE PARA ESE EFECTO ESTABLECE EL ARTÍCULO 321 DEL CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES.',
+    texto: readTxt('2025607_texto.txt'),
+    precedente: 'Contradicción de tesis 230/2021. Entre las sustentadas por el Segundo Tribunal Colegiado del Trigésimo Circuito y el Primer Tribunal Colegiado en Materia Penal del Primer Circuito. 10 de agosto de 2022. Mayoría de tres votos de los Ministros Juan Luis González Alcántara Carrancá y Alfredo Gutiérrez Ortiz Mena y la Ministra Ana Margarita Ríos Farjat. Disidente: Ministro Jorge Mario Pardo Rebolledo. Ausente: Ministra Norma Lucía Piña Hernández. Ponente: Ministro Alfredo Gutiérrez Ortiz Mena. Secretario: José Alberto Mosqueda Velázquez.',
+    organo: 'Primera Sala',
+    tipo: 'Jurisprudencia',
+    epoca: 'Undécima Época',
+    fecha: '2022-12-02',
+    materias: ['Penal'],
+    fuente: 'Gaceta del Semanario Judicial de la Federación, Libro 20, Diciembre de 2022, Tomo I, página 1224',
+    source_url: 'https://sjf2.scjn.gob.mx/detalle/tesis/2025607',
+    ejecutoria: {
+      source_url: 'https://sjf2.scjn.gob.mx/detalle/ejecutoria/31296',
+      registro: '31296',
+      expediente: 'Contradicción de tesis 230/2021',
+      tipo_juicio: 'Contradicción de tesis',
+      fecha_resolucion: '2022-08-10',
+      ponente: 'Alfredo Gutiérrez Ortiz Mena',
+      secretario: 'José Alberto Mosqueda Velázquez',
+      votacion: 'Mayoría de tres votos. Disidente: Jorge Mario Pardo Rebolledo',
+      text_pending: true,
+      note: 'Ejecutoria publicada en Gaceta del SJF, Libro 22, Febrero de 2023, Tomo II, página 2349. Consulte el texto íntegro en la fuente oficial.',
+    },
+    articulos_relacionados: ['211', '321', '322', '323', '324', '334', '337'],
+    text_pending: false,
+    verified_by: 'manual',
+    verified_at: VERIFIED_AT,
+  },
+
+  {
+    id: 'sjf:2024650',
+    registro: '2024650',
+    numero: '1a. XIII/2022 (11a.)',
+    rubro: 'DERECHO A LA DEFENSA DE LOS DERECHOS HUMANOS. CONSTITUYE UN DERECHO HUMANO AUTÓNOMO RECONOCIDO POR EL PARÁMETRO DE CONTROL DE REGULARIDAD CONSTITUCIONAL.',
+    texto: readTxt('2024650_texto.txt'),
+    precedente: 'Amparo en revisión 1031/2019. Centro de Litigio Estratégico para la Defensa de los Derechos Humanos, A.C. 19 de enero de 2022. Cinco votos. Ponente: Ministro Juan Luis González Alcántara Carrancá. Secretario: Pablo Francisco Muñoz Díaz.',
+    organo: 'Primera Sala',
+    tipo: 'Tesis aislada',
+    epoca: 'Undécima Época',
+    fecha: '2022-05-20',
+    materias: ['Constitucional'],
+    fuente: 'Gaceta del Semanario Judicial de la Federación, Libro 13, Mayo de 2022, Tomo IV, página 3498',
+    source_url: 'https://sjf2.scjn.gob.mx/detalle/tesis/2024650',
+    ejecutoria: {
+      source_url: 'https://sjf2.scjn.gob.mx/detalle/ejecutoria/30579',
+      registro: '30579',
+      expediente: 'Amparo en revisión 1031/2019',
+      tipo_juicio: 'Amparo en revisión',
+      fecha_resolucion: '2022-01-19',
+      ponente: 'Juan Luis González Alcántara Carrancá',
+      secretario: 'Pablo Francisco Muñoz Díaz',
+      votacion: 'Unanimidad de cinco votos',
+      text_pending: true,
+      note: 'Ejecutoria publicada en Gaceta del SJF, Libro 13, Mayo de 2022, Tomo III, página 2440. Consulte el texto íntegro en la fuente oficial.',
+    },
+    articulos_relacionados: [],
+    tags: ['defensa de los derechos humanos', 'control de regularidad constitucional', 'eficacia horizontal'],
+    text_pending: false,
+    verified_by: 'manual',
+    verified_at: VERIFIED_AT,
+  },
+
+  {
+    id: 'sjf:2023906',
+    registro: '2023906',
+    numero: '1a./J. 23/2021 (11a.)',
+    rubro: 'JUICIO DE AMPARO INDIRECTO DERIVADO DE UN PROCESO PENAL ACUSATORIO. POR REGLA GENERAL ES IMPROCEDENTE, EN CONTRA DE LA EXCLUSIÓN DE MEDIOS DE PRUEBA EN LA ETAPA INTERMEDIA DEL PROCESO PENAL ACUSATORIO.',
+    texto: readTxt('2023906_texto.txt'),
+    precedente: 'Contradicción de tesis 6/2021. Entre las sustentadas por el Tribunal Colegiado en Materia Penal del Décimo Circuito, el Tribunal Colegiado en Materia Penal del Décimo Primer Circuito, el Tercer Tribunal Colegiado del Vigésimo Séptimo Circuito y el Quinto Tribunal Colegiado en Materia Penal del Primer Circuito. 8 de septiembre de 2021. Mayoría de tres votos. Disidente: Norma Lucía Piña Hernández. Ausente y ponente: Jorge Mario Pardo Rebolledo, en su ausencia hizo suyo el asunto Norma Lucía Piña Hernández. Secretario: Carlos Manuel Baráibar Tovar.',
+    organo: 'Primera Sala',
+    tipo: 'Jurisprudencia',
+    epoca: 'Undécima Época',
+    fecha: '2021-12-03',
+    materias: ['Penal'],
+    fuente: 'Gaceta del Semanario Judicial de la Federación, Libro 8, Diciembre de 2021, Tomo II, página 1319',
+    source_url: 'https://sjf2.scjn.gob.mx/detalle/tesis/2023906',
+    ejecutoria: {
+      source_url: 'https://sjf2.scjn.gob.mx/detalle/ejecutoria/30258',
+      registro: '30258',
+      expediente: 'Contradicción de tesis 6/2021',
+      tipo_juicio: 'Contradicción de tesis',
+      fecha_resolucion: '2021-09-08',
+      ponente: 'Jorge Mario Pardo Rebolledo (asunto retomado por Norma Lucía Piña Hernández)',
+      secretario: 'Carlos Manuel Baráibar Tovar',
+      votacion: 'Mayoría de tres votos. Disidente: Norma Lucía Piña Hernández',
+      text_pending: true,
+      note: 'Ejecutoria publicada en Gaceta del SJF, Libro 8, Diciembre de 2021, Tomo II, página 1286. Consulte el texto íntegro en la fuente oficial.',
+    },
+    articulos_relacionados: ['211', '334', '337', '346', '348', '359', '467', '472'],
+    text_pending: false,
+    verified_by: 'manual',
+    verified_at: VERIFIED_AT,
+  },
+
+  {
+    id: 'sjf:2022096',
+    registro: '2022096',
+    numero: '1a./J. 37/2020 (10a.)',
+    rubro: 'AMPARO INDIRECTO. LA JURISPRUDENCIA 2a./J. 9/2018 (10a.) EMITIDA POR LA SEGUNDA SALA DE LA SUPREMA CORTE DE JUSTICIA DE LA NACIÓN, NO ES APLICABLE PARA DETERMINAR SI LOS DÍAS NO LABORADOS POR LA AUTORIDAD RESPONSABLE DEBEN DESCONTARSE DEL CÓMPUTO DEL PLAZO PREVISTO PARA LA PRESENTACIÓN DE LA DEMANDA, CUANDO SE RECLAME ALGUNA DE LAS RESOLUCIONES DICTADAS EN LA AUDIENCIA INICIAL DEL PROCEDIMIENTO PENAL ACUSATORIO Y ORAL.',
+    texto: readTxt('2022096_texto.txt'),
+    precedente: 'Contradicción de tesis 506/2019. Entre las sustentadas por el Tribunal Colegiado en Materia Penal del Décimo Circuito y el Primer Tribunal Colegiado en Materia Penal del Primer Circuito. 24 de junio de 2020. Mayoría de cuatro votos de los Ministros Norma Lucía Piña Hernández, Ana Margarita Ríos Farjat, Jorge Mario Pardo Rebolledo y Juan Luis González Alcántara Carrancá. Disidente: Alfredo Gutiérrez Ortiz Mena. Ponente: Juan Luis González Alcántara Carrancá. Secretario: Horacio Vite Torres.',
+    organo: 'Primera Sala',
+    tipo: 'Jurisprudencia',
+    epoca: 'Décima Época',
+    fecha: '2020-09-11',
+    materias: ['Penal', 'Común'],
+    fuente: 'Gaceta del Semanario Judicial de la Federación, Libro 78, Septiembre de 2020, Tomo I, página 136',
+    source_url: 'https://sjf2.scjn.gob.mx/detalle/tesis/2022096',
+    ejecutoria: {
+      source_url: 'https://sjf2.scjn.gob.mx/detalle/ejecutoria/29492',
+      registro: '29492',
+      expediente: 'Contradicción de tesis 506/2019',
+      tipo_juicio: 'Contradicción de tesis',
+      fecha_resolucion: '2020-06-24',
+      ponente: 'Juan Luis González Alcántara Carrancá',
+      secretario: 'Horacio Vite Torres',
+      votacion: 'Mayoría de cuatro votos. Disidente: Alfredo Gutiérrez Ortiz Mena',
+      text_pending: true,
+      note: 'Ejecutoria publicada en Gaceta del SJF, Libro 78, Septiembre de 2020, Tomo I, página 93. De la misma contradicción derivó la jurisprudencia complementaria sobre el descuento de los días no laborables cuando el acto reclamado es una resolución dictada en audiencia inicial del procedimiento penal acusatorio y oral.',
+    },
+    articulos_relacionados: ['67', '82', '218', '307', '308'],
+    text_pending: false,
+    verified_by: 'manual',
+    verified_at: VERIFIED_AT,
+  },
+
+  {
+    id: 'sjf:2020891',
+    registro: '2020891',
+    numero: '1a./J. 72/2019 (10a.)',
+    rubro: 'DEFENSA ADECUADA EN LA ETAPA DE INVESTIGACIÓN INICIAL DEL PROCEDIMIENTO PENAL ACUSATORIO. EL INDICIADO Y SU DEFENSOR TIENEN DERECHO A OBTENER COPIAS O REPRODUCCIONES FOTOGRÁFICAS DE LOS DATOS DE PRUEBA QUE OBRAN EN LA CARPETA DE INVESTIGACIÓN, CUANDO EL IMPUTADO SE UBICA EN ALGUNO DE LOS SUPUESTOS ESTABLECIDOS EN EL ARTÍCULO 218, PÁRRAFO TERCERO, DEL CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES.',
+    texto: readTxt('2020891_texto.txt'),
+    precedente: 'Contradicción de tesis 149/2019. Entre las sustentadas por el Pleno en Materia Penal del Primer Circuito y el Segundo Tribunal Colegiado en Materia Penal del Tercer Circuito. 12 de junio de 2019. Cinco votos de los Ministros Norma Lucía Piña Hernández, Luis María Aguilar Morales, Jorge Mario Pardo Rebolledo, Alfredo Gutiérrez Ortiz Mena y Juan Luis González Alcántara Carrancá. Ponente: Juan Luis González Alcántara Carrancá. Secretario: Horacio Vite Torres.',
+    organo: 'Primera Sala',
+    tipo: 'Jurisprudencia',
+    epoca: 'Décima Época',
+    fecha: '2019-10-25',
+    materias: ['Penal'],
+    fuente: 'Gaceta del Semanario Judicial de la Federación, Libro 71, Octubre de 2019, Tomo I, página 994',
+    source_url: 'https://sjf2.scjn.gob.mx/detalle/tesis/2020891',
+    ejecutoria: {
+      source_url: 'https://sjf2.scjn.gob.mx/detalle/ejecutoria/29103',
+      registro: '29103',
+      expediente: 'Contradicción de tesis 149/2019',
+      tipo_juicio: 'Contradicción de tesis',
+      fecha_resolucion: '2019-06-12',
+      ponente: 'Juan Luis González Alcántara Carrancá',
+      secretario: 'Horacio Vite Torres',
+      votacion: 'Unanimidad de cinco votos',
+      text: readTxt('2020891_ejec.txt'),
+      text_pending: false,
+    },
+    articulos_relacionados: ['10', '11', '17', '113', '117', '121', '218', '219', '266'],
+    text_pending: false,
+    verified_by: 'manual',
+    verified_at: VERIFIED_AT,
+  },
+];
+
+// Placeholders previos (tesis verificadas por URL, contenido pendiente de ingesta)
+const placeholders = [
+  '176546', '2030503', '2030571', '2030591', '2030814',
+  '2030986', '2031026', '2031911', '2031978', '2032049',
+].map(r => ({
+  id: 'sjf:' + r,
+  registro: r,
+  source_url: `https://sjf2.scjn.gob.mx/detalle/tesis/${r}`,
+  fuente: 'Semanario Judicial de la Federación',
+  verified_by: 'manual',
+  verified_at: VERIFIED_AT,
+  text_pending: true,
+  ejecutoria: { text_pending: true, url_pending: true },
+  articulos_relacionados: [],
+}));
+
+const dataset = {
+  metadata: {
+    schema_version: 1,
+    last_updated: new Date().toISOString().slice(0, 10),
+    sources: [
+      { id: 'sjf', label: 'Semanario Judicial de la Federación (SCJN)', url: 'https://sjf2.scjn.gob.mx/' },
+      { id: 'scjn', label: 'SCJN — Sentencias y Precedentes obligatorios', url: 'https://www.scjn.gob.mx/' },
+      { id: 'cidh', label: 'Corte Interamericana de Derechos Humanos', url: 'https://www.corteidh.or.cr/cf/jurisprudencia2/index.cfm?lang=es' },
+    ],
+    schema_doc: 'Cada item debe tener source_url accesible. Sin source_url, el cargador descarta el item (anti-alucinación). Los items con text_pending=true son referencias verificadas hacia la fuente oficial; el scraper semanal los completa.',
+    doc_ejecutoria: "Sistema constitucional de precedentes (reforma 11-mar-2021 al art. 94 CPEUM y arts. 222-228 Ley de Amparo): las razones de la ejecutoria son la fuente vinculante; la tesis es solo síntesis. El campo 'ejecutoria' guarda el texto íntegro del fallo originario (cuando esté disponible), su URL canónica en SJF, ponente y tipo de juicio. Sin ese texto las consideraciones que confirman o desvirtúan la tesis quedan invisibles.",
+    seeded_count: tesis.length,
+    placeholder_count: placeholders.length,
+  },
+  items: [...tesis, ...placeholders],
+};
+
+fs.writeFileSync(OUT, JSON.stringify(dataset, null, 2));
+console.log(`Wrote ${OUT}`);
+console.log(`  ${tesis.length} tesis verificadas con contenido`);
+console.log(`  ${placeholders.length} placeholders pendientes de ingesta`);
+console.log(`  Total: ${tesis.length + placeholders.length}`);

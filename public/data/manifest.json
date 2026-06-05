@@ -1,0 +1,11 @@
+{
+  "app": "Buscador Penal MX",
+  "schema_version": 1,
+  "built_at": null,
+  "datasets": {
+    "cnpp": "data/cnpp.json",
+    "precedentes": "data/precedentes.json"
+  },
+  "weekly_update_cron": "0 12 * * 5",
+  "weekly_update_tz": "UTC (06:00 CDMX)"
+}

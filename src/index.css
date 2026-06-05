@@ -8,9 +8,36 @@ html, body, #root {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F5F7FA;
-  color: #1A1A2E;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .article-prose p { margin: 0 0 0.75rem 0; line-height: 1.6; }
+  .article-prose p:last-child { margin-bottom: 0; }
+  .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace; }
+}
+
+/* Hearing mode — high contrast, larger text */
+.hearing-mode {
+  font-size: 1.125rem;
+}
+.hearing-mode .article-prose { font-size: 1.125rem; line-height: 1.65; }
+.hearing-mode .article-prose p { margin-bottom: 1rem; }
+
+/* Hide scrollbar but allow scroll for chip rows */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Diff highlight */
+mark.diff-add { background: #bbf7d0; color: #14532d; padding: 0 2px; border-radius: 2px; }
+mark.diff-del { background: #fecaca; color: #7f1d1d; padding: 0 2px; border-radius: 2px; text-decoration: line-through; }
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
 }
