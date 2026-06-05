@@ -14,7 +14,11 @@ export default defineConfig({
       includeAssets: ['favicon.svg'],
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,webmanifest}'],
-        maximumFileSizeToCacheInBytes: 12 * 1024 * 1024,
+        // Lazy-load: don't precache per-compendio detail files. They are
+        // fetched on demand by CompendioDetail.jsx and cached at runtime
+        // via the StaleWhileRevalidate handler below.
+        globIgnores: ['**/data/compendios/*.json'],
+        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.pathname.endsWith('.json'),
