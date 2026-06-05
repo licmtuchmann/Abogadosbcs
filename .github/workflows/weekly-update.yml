@@ -5,13 +5,6 @@ on:
     # Viernes 12:00 UTC = 06:00 CDMX (CST). Si DST cambia, ajustar.
     - cron: '0 12 * * 5'
   workflow_dispatch:
-  # Bootstrap trigger: corre una vez tras el merge inicial para sembrar el
-  # dataset con el listado del viernes en curso. Después de validar el
-  # primer corrido, se puede quitar este push trigger via PR.
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/weekly-update.yml'
 
 permissions:
   contents: write
