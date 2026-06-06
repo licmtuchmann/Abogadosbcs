@@ -42,6 +42,9 @@ jobs:
       - name: Hydrate SCJN/UNAM compendios (PDF → texto)
         run: node scripts/ingest/compendios.mjs || true
 
+      - name: Enrich precedentes (auto-extract CNPP article refs + materia penal)
+        run: node scripts/build/enrich_articulos.mjs
+
       - name: Verify integrity
         run: npm run verify
 

@@ -93,12 +93,51 @@ function runParser(txtPath) {
   return JSON.parse(fs.readFileSync(outPath, 'utf8'));
 }
 
+// Quick rubro-only materia check. We err on the side of inclusion: only
+// drop items where the rubro clearly indicates non-penal subject matter
+// (notaries, municipal categories, controversias constitucionales, etc.).
+// Items with ambiguous rubros are kept as 'desconocida' and re-classified
+// after hydration when the full texto becomes available.
+function rubroLooksPenal(rubro) {
+  if (!rubro) return null;
+  const t = rubro.toLowerCase();
+  const penalHints = [
+    'penal', 'imputado', 'inculpado', 'acusado', 'sentenciado', 'procesado',
+    'ministerio público', 'fiscal', 'defensor', 'víctima', 'ofendido',
+    'audiencia inicial', 'audiencia intermedia', 'juicio oral', 'juez de control',
+    'carpeta de investigación', 'vinculación a proceso', 'control de detención',
+    'prisión preventiva', 'criterio de oportunidad', 'procedimiento abreviado',
+    'flagrancia', 'caso urgente', 'cateo', 'arraigo', 'orden de aprehensión',
+    'amparo penal', 'defensa adecuada', 'presunción de inocencia',
+    'cnpp', 'código nacional de procedimientos penales', 'sistema penal acusatorio',
+    'derecho a la libertad personal', 'integridad personal', 'no autoincriminación',
+    'tortura', 'desaparición forzada', 'aborto forzado',
+  ];
+  const nonPenalHints = [
+    'controversia constitucional', 'acción de inconstitucionalidad',
+    'organización administrativa', 'categoría administrativa municipal',
+    'derechos por servicios', 'proporcionalidad tributaria',
+    'libertad de trabajo', 'persona notaria', 'función notarial',
+    'registro nacional de valores', 'parlamento abierto', 'acceso a la información pública',
+  ];
+  const has = arr => arr.some(k => t.includes(k));
+  if (has(penalHints)) return 'penal';
+  if (has(nonPenalHints)) return 'no_penal';
+  return 'desconocida';
+}
+
 function mergeIntoPrecedentes(parsed) {
   const ds = JSON.parse(fs.readFileSync(PRECEDENTES, 'utf8'));
   const byId = new Map(ds.items.map(i => [String(i.registro || i.id), i]));
-  let added = 0, updated = 0;
+  let added = 0, updated = 0, skippedNonPenal = 0;
 
   for (const e of parsed.items) {
+    const materia = rubroLooksPenal(e.rubro);
+    // Solo agregamos los que se relacionan o citen el CNPP. Rubros
+    // claramente no-penales se descartan al inyectar; rubros ambiguos
+    // entran como 'desconocida' y el hidratador los reclasifica.
+    if (materia === 'no_penal') { skippedNonPenal++; continue; }
+
     const key = String(e.registro);
     const existing = byId.get(key);
     const placeholder = {
@@ -118,6 +157,7 @@ function mergeIntoPrecedentes(parsed) {
       text_pending: true,
       ejecutoria: { text_pending: true, url_pending: true },
       articulos_relacionados: existing?.articulos_relacionados || [],
+      materia_penal: materia,
     };
     if (existing) {
       // Don't clobber items that already have full text
@@ -138,11 +178,12 @@ function mergeIntoPrecedentes(parsed) {
     parsed_count: parsed.count,
     added,
     updated,
+    skipped_non_penal: skippedNonPenal,
   };
   ds.metadata.last_updated = new Date().toISOString().slice(0, 10);
 
   fs.writeFileSync(PRECEDENTES, JSON.stringify(ds, null, 2));
-  return { added, updated };
+  return { added, updated, skippedNonPenal };
 }
 
 async function main() {

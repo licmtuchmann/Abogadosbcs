@@ -39,7 +39,19 @@
       "hydrated_placeholders": 0,
       "ejecutorias_hydrated": 0
     },
-    "last_updated_cidh": "2026-06-05T21:27:53.548Z"
+    "last_updated_cidh": "2026-06-05T21:27:53.548Z",
+    "last_enriched_at": "2026-06-06T16:59:37.806Z",
+    "materia_breakdown": {
+      "penal": 33,
+      "no_penal": 5,
+      "desconocida": 24
+    },
+    "last_cidh_seed": {
+      "timestamp": "2026-06-06T16:59:37.763Z",
+      "added": 25,
+      "refreshed": 0,
+      "total_cases": 25
+    }
   },
   "items": [
     {
@@ -61,7 +73,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032167",
@@ -82,7 +95,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032179",
@@ -103,7 +117,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032147",
@@ -124,7 +139,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032148",
@@ -145,7 +161,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032157",
@@ -166,7 +183,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032156",
@@ -187,7 +205,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "no_penal"
     },
     {
       "id": "sjf:2032160",
@@ -208,7 +227,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032161",
@@ -229,7 +249,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032162",
@@ -250,7 +271,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "no_penal"
     },
     {
       "id": "sjf:2032165",
@@ -271,7 +293,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032151",
@@ -292,7 +315,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "no_penal"
     },
     {
       "id": "sjf:2032173",
@@ -313,7 +337,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032176",
@@ -334,7 +359,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "no_penal"
     },
     {
       "id": "sjf:2032178",
@@ -355,7 +381,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032146",
@@ -376,7 +403,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:2032158",
@@ -397,7 +425,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032168",
@@ -418,7 +447,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "no_penal"
     },
     {
       "id": "sjf:2032175",
@@ -439,7 +469,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032170",
@@ -460,7 +491,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2030335",
@@ -503,7 +535,8 @@
       ],
       "text_pending": false,
       "verified_by": "manual",
-      "verified_at": "2026-05-28"
+      "verified_at": "2026-05-28",
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:2027195",
@@ -547,7 +580,8 @@
       ],
       "text_pending": false,
       "verified_by": "manual",
-      "verified_at": "2026-05-28"
+      "verified_at": "2026-05-28",
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:2025607",
@@ -588,7 +622,8 @@
       ],
       "text_pending": false,
       "verified_by": "manual",
-      "verified_at": "2026-05-28"
+      "verified_at": "2026-05-28",
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:2024650",
@@ -626,7 +661,8 @@
       ],
       "text_pending": false,
       "verified_by": "manual",
-      "verified_at": "2026-05-28"
+      "verified_at": "2026-05-28",
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:2023906",
@@ -668,7 +704,8 @@
       ],
       "text_pending": false,
       "verified_by": "manual",
-      "verified_at": "2026-05-28"
+      "verified_at": "2026-05-28",
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:2022096",
@@ -708,7 +745,8 @@
       ],
       "text_pending": false,
       "verified_by": "manual",
-      "verified_at": "2026-05-28"
+      "verified_at": "2026-05-28",
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:2020891",
@@ -751,7 +789,8 @@
       ],
       "text_pending": false,
       "verified_by": "manual",
-      "verified_at": "2026-05-28"
+      "verified_at": "2026-05-28",
+      "materia_penal": "penal"
     },
     {
       "id": "sjf:176546",
@@ -765,7 +804,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2030503",
@@ -779,7 +819,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2030571",
@@ -793,7 +834,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2030591",
@@ -807,7 +849,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2030814",
@@ -821,7 +864,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2030986",
@@ -835,7 +879,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2031026",
@@ -849,7 +894,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2031911",
@@ -863,7 +909,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2031978",
@@ -877,7 +924,8 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
     },
     {
       "id": "sjf:2032049",
@@ -891,7 +939,820 @@
         "text_pending": true,
         "url_pending": true
       },
-      "articulos_relacionados": []
+      "articulos_relacionados": [],
+      "materia_penal": "desconocida"
+    },
+    {
+      "id": "cidh:vel-squez-rodr-guez-vs-honduras",
+      "registro": "Serie C No. 4",
+      "rubro": "Caso Velásquez Rodríguez vs. Honduras (Sentencia Corte IDH 1988)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "1988",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_4_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Desaparición forzada y deber estatal de investigar",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Vida",
+        "Integridad personal",
+        "Recurso judicial efectivo"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "131",
+        "132"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:castillo-p-ez-vs-per",
+      "registro": "Serie C No. 34",
+      "rubro": "Caso Castillo Páez vs. Perú (Sentencia Corte IDH 1997)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "1997",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_34_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Desaparición forzada y recurso efectivo (hábeas corpus)",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Recurso judicial efectivo"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "149",
+        "150"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:cesti-hurtado-vs-per",
+      "registro": "Serie C No. 56",
+      "rubro": "Caso Cesti Hurtado vs. Perú (Sentencia Corte IDH 1999)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "1999",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_56_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Detención arbitraria y eficacia del hábeas corpus",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Garantías judiciales"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "149"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:su-rez-rosero-vs-ecuador",
+      "registro": "Serie C No. 35",
+      "rubro": "Caso Suárez Rosero vs. Ecuador (Sentencia Corte IDH 1997)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "1997",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_35_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Plazo razonable de la prisión preventiva y presunción de inocencia",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Plazo razonable",
+        "Presunción de inocencia"
+      ],
+      "articulos_relacionados": [
+        "13",
+        "155",
+        "165",
+        "167"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:tibi-vs-ecuador",
+      "registro": "Serie C No. 114",
+      "rubro": "Caso Tibi vs. Ecuador (Sentencia Corte IDH 2004)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2004",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_114_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Detención arbitraria, tortura e indefensión",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Integridad personal",
+        "Garantías judiciales",
+        "Defensa adecuada"
+      ],
+      "articulos_relacionados": [
+        "17",
+        "113",
+        "155"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:acosta-calder-n-vs-ecuador",
+      "registro": "Serie C No. 129",
+      "rubro": "Caso Acosta Calderón vs. Ecuador (Sentencia Corte IDH 2005)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2005",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_129_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Detención ilegal y plazo razonable de la prisión preventiva",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Plazo razonable"
+      ],
+      "articulos_relacionados": [
+        "155",
+        "165",
+        "313"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:servell-n-garc-a-y-otros-vs-honduras",
+      "registro": "Serie C No. 152",
+      "rubro": "Caso Servellón García y otros vs. Honduras (Sentencia Corte IDH 2006)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2006",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_152_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Detención colectiva, abuso de la fuerza y derecho a la libertad",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Integridad personal",
+        "Vida"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "147",
+        "149"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:yvon-neptune-vs-hait",
+      "registro": "Serie C No. 180",
+      "rubro": "Caso Yvon Neptune vs. Haití (Sentencia Corte IDH 2008)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2008",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_180_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Detención sin orden judicial y control de legalidad",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Garantías judiciales"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "146",
+        "149"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:bayarri-vs-argentina",
+      "registro": "Serie C No. 187",
+      "rubro": "Caso Bayarri vs. Argentina (Sentencia Corte IDH 2008)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2008",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_187_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Detención prolongada y tortura como prueba ilícita",
+      "derechos_interpretados": [
+        "Libertad personal",
+        "Integridad personal",
+        "Prueba ilícita",
+        "Plazo razonable"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "155",
+        "264",
+        "357"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:castillo-petruzzi-y-otros-vs-per",
+      "registro": "Serie C No. 52",
+      "rubro": "Caso Castillo Petruzzi y otros vs. Perú (Sentencia Corte IDH 1999)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "1999",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_52_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Juicio penal militar a civiles e indefensión",
+      "derechos_interpretados": [
+        "Juez natural",
+        "Defensa adecuada",
+        "Garantías judiciales"
+      ],
+      "articulos_relacionados": [
+        "17",
+        "121",
+        "133"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:lori-berenson-mej-a-vs-per",
+      "registro": "Serie C No. 119",
+      "rubro": "Caso Lori Berenson Mejía vs. Perú (Sentencia Corte IDH 2004)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2004",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_119_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Juicio penal militar, defensa adecuada y publicidad",
+      "derechos_interpretados": [
+        "Defensa adecuada",
+        "Juez natural",
+        "Publicidad"
+      ],
+      "articulos_relacionados": [
+        "5",
+        "17",
+        "113"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:apitz-barbera-y-otros-corte-primera-vs-venezuela",
+      "registro": "Serie C No. 182",
+      "rubro": "Caso Apitz Barbera y otros (\"Corte Primera\") vs. Venezuela (Sentencia Corte IDH 2008)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2008",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_182_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Imparcialidad e independencia judicial",
+      "derechos_interpretados": [
+        "Independencia judicial",
+        "Imparcialidad",
+        "Tutela judicial efectiva"
+      ],
+      "articulos_relacionados": [
+        "10",
+        "11",
+        "12",
+        "134"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:ruano-torres-y-otros-vs-el-salvador",
+      "registro": "Serie C No. 303",
+      "rubro": "Caso Ruano Torres y otros vs. El Salvador (Sentencia Corte IDH 2015)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2015",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_303_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Defensa pública deficiente y derecho a defensor competente",
+      "derechos_interpretados": [
+        "Defensa adecuada",
+        "Garantías judiciales"
+      ],
+      "articulos_relacionados": [
+        "17",
+        "113",
+        "117",
+        "121"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:arg-elles-y-otros-vs-argentina",
+      "registro": "Serie C No. 288",
+      "rubro": "Caso Argüelles y otros vs. Argentina (Sentencia Corte IDH 2014)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2014",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_288_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Plazo razonable y prisión preventiva prolongada",
+      "derechos_interpretados": [
+        "Plazo razonable",
+        "Libertad personal"
+      ],
+      "articulos_relacionados": [
+        "155",
+        "165",
+        "167"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:l-pez-mendoza-vs-venezuela",
+      "registro": "Serie C No. 233",
+      "rubro": "Caso López Mendoza vs. Venezuela (Sentencia Corte IDH 2011)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2011",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_233_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Presunción de inocencia y debido proceso administrativo-sancionatorio",
+      "derechos_interpretados": [
+        "Presunción de inocencia",
+        "Garantías judiciales"
+      ],
+      "articulos_relacionados": [
+        "13",
+        "402"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:almonacid-arellano-y-otros-vs-chile",
+      "registro": "Serie C No. 154",
+      "rubro": "Caso Almonacid Arellano y otros vs. Chile (Sentencia Corte IDH 2006)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2006",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_154_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Origen del control de convencionalidad ex officio",
+      "derechos_interpretados": [
+        "Control de convencionalidad",
+        "Acceso a la justicia"
+      ],
+      "articulos_relacionados": [
+        "1",
+        "14",
+        "264"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:trabajadores-cesados-del-congreso-aguado-alfaro-y-otros-vs-per",
+      "registro": "Serie C No. 158",
+      "rubro": "Caso Trabajadores Cesados del Congreso (Aguado Alfaro y otros) vs. Perú (Sentencia Corte IDH 2006)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2006",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_158_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Consolidación del control de convencionalidad por toda autoridad pública",
+      "derechos_interpretados": [
+        "Control de convencionalidad",
+        "Recurso efectivo"
+      ],
+      "articulos_relacionados": [
+        "1",
+        "14"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:gelman-vs-uruguay",
+      "registro": "Serie C No. 221",
+      "rubro": "Caso Gelman vs. Uruguay (Sentencia Corte IDH 2011)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2011",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_221_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Control de convencionalidad frente a leyes de amnistía",
+      "derechos_interpretados": [
+        "Control de convencionalidad",
+        "Acceso a la justicia para víctimas"
+      ],
+      "articulos_relacionados": [
+        "1",
+        "17"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:cabrera-garc-a-y-montiel-flores-vs-m-xico",
+      "registro": "Serie C No. 220",
+      "rubro": "Caso Cabrera García y Montiel Flores vs. México (Sentencia Corte IDH 2010)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2010",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_220_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Tortura, prueba ilícita y control de convencionalidad por jueces mexicanos",
+      "derechos_interpretados": [
+        "Control de convencionalidad",
+        "Prueba ilícita",
+        "Integridad personal",
+        "Defensa adecuada"
+      ],
+      "articulos_relacionados": [
+        "1",
+        "17",
+        "113",
+        "264",
+        "357"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:atala-riffo-y-ni-as-vs-chile",
+      "registro": "Serie C No. 239",
+      "rubro": "Caso Atala Riffo y niñas vs. Chile (Sentencia Corte IDH 2012)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2012",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_239_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Principio pro persona y no discriminación",
+      "derechos_interpretados": [
+        "Pro persona",
+        "No discriminación",
+        "Garantías judiciales"
+      ],
+      "articulos_relacionados": [
+        "1",
+        "10"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:b-maca-vel-squez-vs-guatemala",
+      "registro": "Serie C No. 70",
+      "rubro": "Caso Bámaca Velásquez vs. Guatemala (Sentencia Corte IDH 2000)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2000",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_70_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Tortura e investigación efectiva",
+      "derechos_interpretados": [
+        "Integridad personal",
+        "Vida",
+        "Recurso efectivo"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "264"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:cantoral-benavides-vs-per",
+      "registro": "Serie C No. 69",
+      "rubro": "Caso Cantoral Benavides vs. Perú (Sentencia Corte IDH 2000)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2000",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_69_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Tortura como técnica de obtención de confesión",
+      "derechos_interpretados": [
+        "Integridad personal",
+        "No autoincriminación",
+        "Defensa adecuada"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "155",
+        "264"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:maritza-urrutia-vs-guatemala",
+      "registro": "Serie C No. 103",
+      "rubro": "Caso Maritza Urrutia vs. Guatemala (Sentencia Corte IDH 2003)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2003",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_103_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Tortura psicológica y deber de investigar",
+      "derechos_interpretados": [
+        "Integridad personal",
+        "Recurso efectivo"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "264"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:bueno-alves-vs-argentina",
+      "registro": "Serie C No. 164",
+      "rubro": "Caso Bueno Alves vs. Argentina (Sentencia Corte IDH 2007)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2007",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_164_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Estándar interamericano de prohibición absoluta de la tortura",
+      "derechos_interpretados": [
+        "Integridad personal",
+        "Prueba ilícita"
+      ],
+      "articulos_relacionados": [
+        "113",
+        "264"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
+    },
+    {
+      "id": "cidh:penal-miguel-castro-castro-vs-per",
+      "registro": "Serie C No. 160",
+      "rubro": "Caso Penal Miguel Castro Castro vs. Perú (Sentencia Corte IDH 2006)",
+      "organo": "Corte Interamericana de Derechos Humanos",
+      "tipo": "Sentencia",
+      "epoca": "Sistema Interamericano",
+      "fecha": "2006",
+      "materias": [
+        "Penal",
+        "Constitucional",
+        "Derechos Humanos"
+      ],
+      "fuente": "Corte Interamericana de Derechos Humanos",
+      "source_url": "https://www.corteidh.or.cr/docs/casos/articulos/seriec_160_esp.pdf",
+      "fallback_url": "https://www.corteidh.or.cr/cf/Jurisprudencia2/index.cfm?lang=es",
+      "url_canonical_pending": true,
+      "tema": "Tratos crueles a personas privadas de libertad",
+      "derechos_interpretados": [
+        "Integridad personal",
+        "Trato digno de la persona privada de libertad"
+      ],
+      "articulos_relacionados": [
+        "113"
+      ],
+      "materia_penal": "penal",
+      "text_pending": true,
+      "verified_by": "manual_cidh_seed",
+      "verified_at": "2026-06-05"
     }
   ]
 }

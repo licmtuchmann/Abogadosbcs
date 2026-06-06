@@ -13,7 +13,9 @@
     "data:sjf-listado": "node scripts/ingest/sjf_listado.mjs",
     "data:cidh": "node scripts/ingest/cidh.mjs",
     "data:compendios": "node scripts/ingest/compendios.mjs",
-    "data:all": "npm run data:cnpp && npm run data:sjf-listado && npm run data:sjf && npm run data:cidh && npm run data:compendios",
+    "data:enrich": "node scripts/build/enrich_articulos.mjs",
+    "data:seed-cidh": "node scripts/build/seed_cidh.mjs",
+    "data:all": "npm run data:cnpp && npm run data:sjf-listado && npm run data:sjf && npm run data:cidh && npm run data:compendios && npm run data:enrich",
     "verify": "node scripts/build/verify.mjs"
   },
   "dependencies": {
