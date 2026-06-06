@@ -23,8 +23,10 @@ export async function loadDataset() {
   ]);
 
   // Strict filter: drop any precedente that doesn't have a verifiable source URL
+  // OR that has been explicitly classified as non-penal materia.
   const verified = (precedentes.items || []).filter(p =>
     p && p.source_url && /^https?:\/\//i.test(p.source_url)
+       && p.materia_penal !== 'no_penal'
   );
   const verifiedCompendios = (compendios.items || []).filter(c =>
     c && c.source_url && /^https?:\/\//i.test(c.source_url)
