@@ -1,0 +1,29 @@
+{
+  "nuc": "LPZ/0000/2026",
+  "asunto": "Ejemplo ficticio — sustituir por los datos reales",
+  "lugar": "Oficinas del despacho, La Paz, Baja California Sur",
+  "fecha": "2026-10-13",
+  "hora": "11:40",
+  "hora_conclusion": "12:35",
+  "entrevistador": "",
+  "entrevistado": "NOMBRE COMPLETO DE LA PERSONA TESTIGO",
+  "domicilio": "",
+  "tiempo_residencia": "",
+  "correo": "",
+  "edad": 45,
+  "media_filiacion": "",
+  "apodo": "",
+  "sexo": "",
+  "telefono": "",
+  "ocupacion": "",
+  "domicilio_laboral": "",
+  "identificacion_tipo": "Credencial para votar",
+  "identificacion_numero": "",
+  "relacion": "",
+  "relato": "",
+  "preguntas": [
+    {"pregunta": "Indique a qué se dedica y desde cuándo.", "respuesta": ""},
+    {"pregunta": "Describa qué percibió el día de los hechos, en el orden en que ocurrió.", "lineas_respuesta": 4},
+    "¿Quién más estaba presente en ese momento?"
+  ]
+}
