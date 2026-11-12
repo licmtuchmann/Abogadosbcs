@@ -924,7 +924,7 @@ const Hero = ({ t, setPage }) => (
             {[
               { Icon: MapPin, text: 'Nayarit 1025, Col. Pueblo Nuevo, La Paz, B.C.S.' },
               { Icon: Phone, text: '612 146 3512' },
-              { Icon: MessageCircle, text: 'WhatsApp · 612 111 0641 · 612 140 2313' },
+              { Icon: MessageCircle, text: 'WhatsApp · 612 348 3418' },
               { Icon: Mail, text: 'meficlientes@gmail.com' },
             ].map(({ Icon, text }, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -1159,7 +1159,7 @@ const CTAFinal = ({ t, setPage }) => (
           <Phone size={16} /> {t.cta.phone}
         </a>
         <a
-          href="https://wa.me/526121110641"
+          href="https://wa.me/526123483418"
           target="_blank"
           rel="noreferrer"
           style={{ fontFamily: FONT_SANS, color: C.white, fontWeight: 600 }}
@@ -1496,7 +1496,7 @@ const ContactPage = ({ t, lang }) => {
   };
 
   const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Nayarit 1025, Pueblo Nuevo, La Paz, Baja California Sur, 23060');
-  const waUrl = 'https://wa.me/526121110641?text=' + encodeURIComponent(lang === 'es' ? 'Hola, me gustaría consultar sobre mi caso.' : 'Hello, I would like to consult about my case.');
+  const waUrl = 'https://wa.me/526123483418?text=' + encodeURIComponent(lang === 'es' ? 'Hola, me gustaría consultar sobre mi caso.' : 'Hello, I would like to consult about my case.');
 
   const inputStyle = {
     backgroundColor: C.white,
@@ -1624,7 +1624,7 @@ const ContactPage = ({ t, lang }) => {
                 {[
                   { Icon: MapPin, label: t.contactPage.info.address, value: t.contactPage.info.addressValue },
                   { Icon: Phone, label: t.contactPage.info.phone, value: '612 146 3512', href: 'tel:6121463512' },
-                  { Icon: MessageCircle, label: t.contactPage.info.whatsapp, value: '612 111 0641 · 612 140 2313', href: waUrl, target: '_blank' },
+                  { Icon: MessageCircle, label: t.contactPage.info.whatsapp, value: '612 348 3418', href: waUrl, target: '_blank' },
                   { Icon: Mail, label: t.contactPage.info.email, value: 'meficlientes@gmail.com', href: 'mailto:meficlientes@gmail.com' },
                   { Icon: Clock, label: t.contactPage.info.hours, value: t.contactPage.info.hoursValue },
                 ].map(({ Icon, label, value, href, target }, i) => (
@@ -1788,8 +1788,8 @@ const Footer = ({ t, lang, setPage }) => {
               </li>
               <li className="flex items-center gap-2">
                 <MessageCircle size={14} color={C.gold} className="flex-shrink-0" />
-                <a href="https://wa.me/526121110641" target="_blank" rel="noreferrer" style={{ fontFamily: FONT_SANS, color: '#ffffffb3' }} className="text-sm hover:text-white">
-                  612 111 0641 · 612 140 2313
+                <a href="https://wa.me/526123483418" target="_blank" rel="noreferrer" style={{ fontFamily: FONT_SANS, color: '#ffffffb3' }} className="text-sm hover:text-white">
+                  612 348 3418
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -1823,7 +1823,7 @@ const FloatingWhatsApp = ({ tip }) => {
   const [hover, setHover] = useState(false);
   return (
     <a
-      href="https://wa.me/526121110641?text=Hola%2C%20me%20gustaría%20consultar%20sobre%20mi%20caso."
+      href="https://wa.me/526123483418?text=Hola%2C%20me%20gustaría%20consultar%20sobre%20mi%20caso."
       target="_blank"
       rel="noreferrer"
       className="fixed bottom-6 right-6 z-30 flex items-center gap-3 group"

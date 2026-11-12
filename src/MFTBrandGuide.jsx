@@ -1234,7 +1234,7 @@ const WhatsAppBanner = () => (
           <p style={{ fontFamily: FONT_NARROW, color: C.gold, letterSpacing: '0.3em' }} className="text-[10px] font-bold uppercase">WHATSAPP BUSINESS</p>
         </div>
         <p style={{ fontFamily: FONT_SERIF, color: '#fff', fontWeight: 700 }} className="text-2xl mb-1">Consulta jurídica directa</p>
-        <p style={{ fontFamily: FONT_SANS, color: '#ffffffb3' }} className="text-sm">612 111 0641 · 612 140 2313</p>
+        <p style={{ fontFamily: FONT_SANS, color: '#ffffffb3' }} className="text-sm">612 348 3418</p>
       </div>
       <div className="hidden sm:block">
         <LogoFull navy="#fff" />
@@ -1310,7 +1310,7 @@ const ApplicationsSection = () => (
             {[
               [MapPin, 'Nayarit 1025, Col. Pueblo Nuevo, La Paz B.C.S., C.P. 23060'],
               [Phone, '612 146 3512'],
-              [MessageCircle, '612 111 0641 · 612 140 2313'],
+              [MessageCircle, '612 348 3418'],
               [Mail, 'meficlientes@gmail.com'],
               [Globe, 'abogadobcs.com.mx'],
               [Clock, 'Lun a Vie · 9:00 — 18:00'],
